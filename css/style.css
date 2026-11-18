@@ -1,4 +1,100 @@
 
+/* =====================================
+   TAMPILAN PENGANTIN DI HP
+   YULVA - LOVE - MUSLIADI
+===================================== */
+@media (max-width: 767px) {
+
+    /* Atur tiga kolom dalam satu baris */
+    #weddingAbout .row.g-4.align-items-center {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center !important;
+        gap: 0;
+    }
+
+    #weddingAbout .row.g-4.align-items-center > .col-lg-5 {
+        flex: 0 0 44%;
+        max-width: 44%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #weddingAbout .row.g-4.align-items-center > .col-lg-2 {
+        display: flex !important;
+        flex: 0 0 12%;
+        max-width: 12%;
+        padding: 0;
+    }
+
+    /* Susunan foto dan teks */
+    #weddingAbout .bride-content,
+    #weddingAbout .groom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    #weddingAbout .bride-content .text-end {
+        text-align: center !important;
+    }
+
+    /* Ukuran foto */
+    #weddingAbout .img-border {
+        width: 105px;
+        height: 135px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    /* Nama pengantin */
+    #weddingAbout h3 {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 6px !important;
+    }
+
+    /* Keterangan orang tua */
+    #weddingAbout .bride-content p,
+    #weddingAbout .groom-content p {
+        font-size: 10px;
+        line-height: 1.6 !important;
+        text-align: center;
+    }
+
+    /* Logo love */
+    #weddingAbout .fa-heart {
+        font-size: 42px !important;
+        line-height: 1;
+        margin: auto;
+    }
+}
+
+/* HP dengan layar kecil */
+@media (max-width: 380px) {
+    #weddingAbout .img-border {
+        width: 90px;
+        height: 120px;
+    }
+
+    #weddingAbout h3 {
+        font-size: 16px;
+    }
+
+    #weddingAbout .bride-content p,
+    #weddingAbout .groom-content p {
+        font-size: 9px;
+    }
+
+    /* Logo love untuk layar kecil */
+    #weddingAbout .fa-heart {
+        font-size: 36px !important;
+    }
+}
+
 
 /* Font bagian nama pengantin dan orang tua */
 #weddingAbout h3 {
