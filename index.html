@@ -73,27 +73,40 @@
         
 <!-- Guest Name Start -->
 
+
 <style>
+    /* =====================================
+       GUEST NAME - NAMA TAMU UNDANGAN
+    ===================================== */
+
     .guest-greeting {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative;
+        z-index: 10;
+        width: 100%;
         background: #fffaf7;
         padding: 32px 15px 25px;
         text-align: center;
     }
 
-    /* Tulisan Kepada Yth. */
     .guest-greeting .guest-label {
+        display: block;
         font-family: 'Lato', sans-serif;
-        color: #9b7653;
+        color: #9b7653 !important;
         font-size: 15px;
         font-weight: 400;
         letter-spacing: 1px;
         margin-bottom: 10px;
     }
 
-    /* Nama tamu */
     .guest-greeting .guest-name {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
         font-family: 'Cormorant Garamond', serif;
-        color: #8b6548;
+        color: #8b6548 !important;
         font-size: clamp(30px, 5vw, 43px);
         font-weight: 600;
         line-height: 1.3;
@@ -101,7 +114,6 @@
         overflow-wrap: anywhere;
     }
 
-    /* Tampilan HP */
     @media (max-width: 576px) {
         .guest-greeting {
             padding: 25px 15px 20px;
@@ -117,6 +129,10 @@
     }
 </style>
 
+
+
+<!-- Guest Name Start -->
+
 <section class="guest-greeting" aria-label="Nama tamu undangan">
 
     <p class="guest-label">Kepada Yth.</p>
@@ -130,6 +146,9 @@
     </p>
 
 </section>
+
+<!-- Guest Name End -->
+
 
 <!-- Guest Name End -->
 
