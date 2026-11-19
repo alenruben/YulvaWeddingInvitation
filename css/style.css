@@ -1,71 +1,3 @@
-
-.wedding-heading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.65);
-}
-
-@media (max-width: 576px) {
-    .wedding-heading {
-        font-size: 17px;
-        letter-spacing: 1.5px;
-    }
-}
-
-/* ===================================
-   Wedding Story Timeline
-=================================== */
-
-.story {
-    overflow: hidden;
-}
-
-.story-timeline .row {
-    min-height: 320px;
-}
-
-.story-timeline .bg-secondary {
-    border-radius: 4px;
-}
-
-.story-img {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-/* Responsive Mobile */
-@media (max-width: 767.98px) {
-
-    .story-timeline .row {
-        min-height: auto;
-        margin-bottom: 25px;
-    }
-
-    .story-timeline .col-md-6 {
-        border-left: 1px solid var(--bs-secondary) !important;
-        border-right: 1px solid var(--bs-secondary) !important;
-        text-align: left !important;
-        padding: 15px !important;
-    }
-
-    .story-img {
-        height: 240px;
-    }
-
-    .story-timeline .bg-secondary {
-        padding: 20px !important;
-    }
-
-    .story-timeline p.fs-5 {
-        font-size: 1rem !important;
-    }
-}
-
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
@@ -256,6 +188,34 @@
     border-left: 15px solid var(--bs-primary);
 }
 /*** Carousel End ***/
+
+
+/* =====================================
+   FONT CAROUSEL WEDDING
+===================================== */
+
+/* Tulisan WE ARE GETTING MARRIED */
+.carousel-header .caption-content h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+/* Nama kedua mempelai */
+.carousel-header .caption-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Tampilan HP */
+@media (max-width: 767px) {
+    .carousel-header .caption-content h4 {
+        letter-spacing: 1px;
+    }
+}
+
 
 
 /*** Wedding Story Start ***/
@@ -507,3 +467,262 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+/* =====================================
+   WEDDING ABOUT - FONT & RESPONSIVE
+   YULVA - LOVE - MUSLIADI
+===================================== */
+
+/* Font judul dan nama mempelai */
+#weddingAbout h1,
+#weddingAbout h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+}
+
+#weddingAbout h3 {
+    font-size: 30px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+}
+
+/* Font keterangan orang tua */
+#weddingAbout .bride-content p,
+#weddingAbout .groom-content p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+    color: #66594f;
+}
+
+/* Kalimat pembuka undangan */
+#weddingAbout .mx-auto h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 1.7;
+}
+
+/* Tampilan HP dan tablet */
+@media screen and (max-width: 767px) {
+
+    /* Pastikan tiga kolom tetap sejajar */
+    #weddingAbout .row.g-4.align-items-center {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        gap: 0 !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        --bs-gutter-x: 0;
+    }
+
+    /* Kolom Yulva dan Musliadi */
+    #weddingAbout .row.g-4.align-items-center > div:nth-child(1),
+    #weddingAbout .row.g-4.align-items-center > div:nth-child(3) {
+        flex: 0 0 42% !important;
+        width: 42% !important;
+        max-width: 42% !important;
+        min-width: 0 !important;
+        padding: 4px !important;
+    }
+
+    /* Kolom ikon love */
+    #weddingAbout .row.g-4.align-items-center > div:nth-child(2) {
+        display: flex !important;
+        flex: 0 0 16% !important;
+        width: 16% !important;
+        max-width: 16% !important;
+        min-width: 0 !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0 !important;
+    }
+
+    /* Foto di atas, nama dan keterangan di bawah */
+    #weddingAbout .bride-content,
+    #weddingAbout .groom-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 7px !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    #weddingAbout .bride-content .text-end {
+        text-align: center !important;
+    }
+
+    /* Ukuran foto */
+    #weddingAbout .bride-content .img-border,
+    #weddingAbout .groom-content .img-border {
+        display: block;
+        width: 100% !important;
+        max-width: 115px !important;
+        height: 140px !important;
+        object-fit: cover !important;
+        flex-shrink: 0;
+    }
+
+    /* Nama mempelai */
+    #weddingAbout .bride-content h3,
+    #weddingAbout .groom-content h3 {
+        font-size: 19px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 5px !important;
+        overflow-wrap: anywhere;
+    }
+
+    /* Keterangan orang tua */
+    #weddingAbout .bride-content p,
+    #weddingAbout .groom-content p {
+        font-size: 10px !important;
+        line-height: 1.5 !important;
+        letter-spacing: 0 !important;
+        text-align: center !important;
+    }
+
+    /* Ikon love */
+    #weddingAbout .fa-heart {
+        display: inline-block !important;
+        font-size: 38px !important;
+        line-height: 1 !important;
+        margin: 0 !important;
+    }
+
+    /* Judul Hello dan kalimat pembuka */
+    #weddingAbout h1 {
+        font-size: 34px;
+    }
+
+    #weddingAbout .mx-auto h4 {
+        font-size: 14px;
+    }
+}
+
+/* HP dengan layar sangat kecil */
+@media screen and (max-width: 380px) {
+    #weddingAbout .bride-content .img-border,
+    #weddingAbout .groom-content .img-border {
+        max-width: 98px !important;
+        height: 125px !important;
+    }
+
+    #weddingAbout .bride-content h3,
+    #weddingAbout .groom-content h3 {
+        font-size: 16px !important;
+    }
+
+    #weddingAbout .bride-content p,
+    #weddingAbout .groom-content p {
+        font-size: 9px !important;
+    }
+
+    #weddingAbout .fa-heart {
+        font-size: 32px !important;
+    }
+}
+
+
+/* ==================================================
+   TYPOGRAPHY UNDANGAN YULVA & MUSLIADI
+   Font Montserrat: jelas, modern, dan tetap elegan
+================================================== */
+
+/* Judul pada carousel */
+.carousel-header .caption-content .wedding-heading {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: clamp(15px, 1.8vw, 22px) !important;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    line-height: 1.6 !important;
+    color: #fff !important;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, .85);
+}
+
+/* Kalimat pembuka undangan */
+#weddingAbout .invitation-heading {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    letter-spacing: .2px !important;
+    line-height: 1.8 !important;
+    color: #39332f !important;
+}
+
+/* Nama mempelai */
+#weddingAbout .bride-name,
+#weddingAbout .groom-name {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 31px !important;
+    font-weight: 700 !important;
+    letter-spacing: .4px !important;
+    line-height: 1.25 !important;
+}
+
+/* Keterangan orang tua */
+#weddingAbout .bride-description,
+#weddingAbout .groom-description {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    letter-spacing: .1px !important;
+    line-height: 1.9 !important;
+    color: #514943 !important;
+}
+
+/* Nomor rekening */
+.account-number {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    line-height: 1.7 !important;
+    color: #8b6548 !important;
+}
+
+@media (max-width: 767px) {
+    .carousel-header .caption-content .wedding-heading {
+        font-size: 15px !important;
+        letter-spacing: 1.2px !important;
+    }
+
+    #weddingAbout .invitation-heading {
+        font-size: 14px !important;
+    }
+
+    #weddingAbout .bride-name,
+    #weddingAbout .groom-name {
+        font-size: 19px !important;
+    }
+
+    #weddingAbout .bride-description,
+    #weddingAbout .groom-description {
+        font-size: 10px !important;
+        line-height: 1.6 !important;
+    }
+
+    .account-number {
+        font-size: 18px !important;
+        letter-spacing: 1px !important;
+    }
+}
+
+@media (max-width: 380px) {
+    #weddingAbout .bride-name,
+    #weddingAbout .groom-name {
+        font-size: 16px !important;
+    }
+
+    #weddingAbout .bride-description,
+    #weddingAbout .groom-description {
+        font-size: 9px !important;
+    }
+}
