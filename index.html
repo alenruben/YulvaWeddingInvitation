@@ -11,8 +11,7 @@
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;500;600&family=Petit+Formal+Script&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- Icon Font Stylesheet -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
@@ -71,29 +70,53 @@
 
 
 
-        <!-- Guest Name Start -->
-        <style>
-            .guest-greeting {
-                background: #fffaf7;
-                padding: 28px 15px 18px;
-                text-align: center;
-            }
-            .guest-greeting .guest-label {
-                color: #9b7653;
-                font-size: 0.95rem;
-                letter-spacing: 1px;
-                margin-bottom: 8px;
-            }
-            .guest-greeting .guest-name {
-                color: #9b7653;
-                font-family: 'Great Vibes', cursive;
-                font-size: clamp(2rem, 5vw, 3rem);
-                margin: 0;
-                overflow-wrap: anywhere;
-            }
-        </style>
         
 <!-- Guest Name Start -->
+
+<style>
+    .guest-greeting {
+        background: #fffaf7;
+        padding: 32px 15px 25px;
+        text-align: center;
+    }
+
+    /* Tulisan Kepada Yth. */
+    .guest-greeting .guest-label {
+        font-family: 'Lato', sans-serif;
+        color: #9b7653;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    /* Nama tamu */
+    .guest-greeting .guest-name {
+        font-family: 'Cormorant Garamond', serif;
+        color: #8b6548;
+        font-size: clamp(30px, 5vw, 43px);
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+    /* Tampilan HP */
+    @media (max-width: 576px) {
+        .guest-greeting {
+            padding: 25px 15px 20px;
+        }
+
+        .guest-greeting .guest-name {
+            font-size: 32px;
+        }
+
+        .guest-greeting .guest-label {
+            font-size: 13px;
+        }
+    }
+</style>
+
 <section class="guest-greeting" aria-label="Nama tamu undangan">
 
     <p class="guest-label">Kepada Yth.</p>
@@ -107,9 +130,9 @@
     </p>
 
 </section>
+
 <!-- Guest Name End -->
 
-        <!-- Guest Name End -->
 
         <!-- Carousel Start -->
         
@@ -315,7 +338,7 @@
                                 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْمِ
                             </h4>
 
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
+                            <h4 class="text-white text-uppercase wedding-heading mb-0">
                                 WE ARE GETTING MARRIED
                             </h4>
 
@@ -330,7 +353,7 @@
                         <div class="caption-border">
 
                             <h4 class="text-white text-uppercase fw-bold mb-0">
-                                12 December 2026
+                             12 December 2026
                             </h4>
 
                         </div>
@@ -357,7 +380,7 @@
                                 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْمِ
                             </h4>
 
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
+                            <h4 class="text-white text-uppercase wedding-heading mb-0">
                                 WE ARE GETTING MARRIED
                             </h4>
 
@@ -372,7 +395,7 @@
                         <div class="caption-border">
 
                             <h4 class="text-white text-uppercase fw-bold mb-0">
-                            12 December 2026
+                                 12 December 2026
                             </h4>
 
                         </div>
@@ -399,7 +422,7 @@
                                 بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْمِ
                             </h4>
 
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
+                            <h4 class="text-white text-uppercase wedding-heading mb-0">
                                 WE ARE GETTING MARRIED
                             </h4>
 
@@ -544,45 +567,47 @@
         <div class="mx-auto text-center mb-5 wow fadeInUp"
              data-wow-delay="0.1s" style="max-width: 800px;">
             <h1 class="text-primary display-1">Hello!</h1>
-            <h4 class="text-dark mb-0">We invite you to celebrate our wedding</h4>
+            <h4 class="text-dark mb-0 invitation-heading">We invite you to celebrate our wedding</h4>
         </div>
 
         <div class="row g-4 align-items-center">
 
             <!-- Bride -->
-            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="bride-content">
-                    <div class="text-end my-auto">
-                        <h3 class="text-primary mb-3">Yulva Sulistia</h3>
-                        <p class="text-dark mb-0" style="line-height: 30px;">
-                            Putri dari Bapak Legiman & Ibu Mariani br. Purba
-                        </p>
-                    </div>
+<div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="bride-content">
+        <div class="text-end my-auto">
+            <h3 class="text-primary mb-3 bride-name">Yulva Sulistia</h3>
+            <p class="text-dark mb-0 bride-description">
+                Anak kedua dari pasangan<br>
+                Bapak Legiman & Ibu Mariani br. Purba
+            </p>
+        </div>
 
-                    <img src="bride.jpg" class="img-fluid img-border" alt="Yulva">
-                </div>
-            </div>
+        <img src="bride.jpg" class="img-fluid img-border" alt="Yulva">
+    </div>
+</div>
 
-            <!-- Heart -->
-            <div class="col-lg-2 wow fadeIn" data-wow-delay="0.5s">
-                <div class="d-flex align-items-center justify-content-center">
-                    <i class="fa fa-heart fa-5x text-primary"></i>
-                </div>
-            </div>
+<!-- Heart -->
+<div class="col-lg-2 wow fadeIn" data-wow-delay="0.5s">
+    <div class="d-flex align-items-center justify-content-center">
+        <i class="fa fa-heart fa-5x text-primary"></i>
+    </div>
+</div>
 
-            <!-- Groom -->
-            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="groom-content">
-                    <img src="Groom.jpg" class="img-fluid img-border" alt="Adi">
+<!-- Groom -->
+<div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="groom-content">
+        <img src="Groom.jpg" class="img-fluid img-border" alt="Musliadi">
 
-                    <div class="my-auto">
-                        <h3 class="text-primary mb-3">Musliadi</h3>
-                        <p class="text-dark mb-0" style="line-height: 30px;">
-                            Putra dari Bapak Lamuse Laupe & Ibu Suriani
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="my-auto">
+            <h3 class="text-primary mb-3 groom-name">Musliadi</h3>
+            <p class="text-dark mb-0 groom-description">
+                Anak kedua dari pasangan<br>
+                Bapak Lamuse Laupe & Ibu Suriani
+            </p>
+        </div>
+    </div>
+</div>
 
         </div>
     </div>
@@ -1046,152 +1071,334 @@
 
 
 
-        <!-- Gallery Start -->
-        <div class="container-fluid gallery position-relative py-5" id="weddingGallery">
-            <div class="position-absolute" style="top: -95px; right: 0;">
-                <img src="tamp-bg-1.png" class="img-fluid" alt="">
-            </div>
-            <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
-                <img src="tamp-bg-1.png" class="img-fluid" alt="">
-            </div>
-            <div class="container position-relative py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h1 class="display-2 text-dark">Wedding Gallery</h1>
-                    <p class="fs-5 text-dark">A collection of beautiful moments and memories shared with our beloved family and friends.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img class="img-fluid w-100" src="foto1.jpg" alt="">
-                                <div class="hover-style"></div>
-                                <div class="search-icon">
-                                    <a href="foto1.jpg" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                                <h5>Our Memory</h5>
-                                <p class="text-dark mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img class="img-fluid w-100" src="foto2.jpg" alt="">
-                                <div class="hover-style"></div>
-                                <div class="search-icon">
-                                    <a href="foto2.jpg" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                                <h5>Our Memory</h5>
-                                <p class="text-dark mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img class="img-fluid w-100" src="foto3.jpg" alt="">
-                                <div class="hover-style"></div>
-                                <div class="search-icon">
-                                    <a href="foto3.jpg" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                                <h5>Our Memory</h5>
-                                <p class="text-dark mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img class="img-fluid w-100" src="foto4.jpg" alt="">
-                                <div class="hover-style"></div>
-                                <div class="search-icon">
-                                    <a href="foto4.jpg" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                                <h5>Our Memory</h5>
-                                <p class="text-dark mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img class="img-fluid w-100" src="foto5.jpg" alt="">
-                                <div class="hover-style"></div>
-                                <div class="search-icon">
-                                    <a href="foto5.jpg" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                                <h5>Our Memory</h5>
-                                <p class="text-dark mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img class="img-fluid w-100" src="foto6.jpg" alt="">
-                                <div class="hover-style"></div>
-                                <div class="search-icon">
-                                    <a href="foto6.jpg" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                                <h5>Our Memory</h5>
-                                <p class="text-dark mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img class="img-fluid w-100" src="foto7.jpg" alt="">
-                                <div class="hover-style"></div>
-                                <div class="search-icon">
-                                    <a href="foto7.jpg" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                                <h5>Our Memory</h5>
-                                <p class="text-dark mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="gallery-item">
-                            <div class="gallery-img">
-                                <img class="img-fluid w-100" src="foto8.jpg" alt="">
-                                <div class="hover-style"></div>
-                                <div class="search-icon">
-                                    <a href="foto8.jpg" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i></a>
-                                </div>
-                            </div>
-                            <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                                <h5>Our Memory</h5>
-                                <p class="text-dark mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 text-center wow fadeIn" data-wow-delay="0.2s">
-                        <a class="btn btn-primary btn-primary-outline-0 py-3 px-5 me-2" href="#">View All <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
+        
+<!-- Gallery Start -->
+<div class="container-fluid gallery position-relative py-5" id="weddingGallery">
+
+    <div class="position-absolute" style="top: -95px; right: 0;">
+        <img src="tamp-bg-1.png" class="img-fluid" alt="">
+    </div>
+
+    <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
+        <img src="tamp-bg-1.png" class="img-fluid" alt="">
+    </div>
+
+    <div class="container position-relative py-5">
+
+        <!-- Judul Gallery -->
+        <div class="text-center mx-auto pb-5 wow fadeInUp"
+             data-wow-delay="0.1s"
+             style="max-width: 800px;">
+
+            <h1 class="display-2 text-dark">Wedding Gallery</h1>
+
+            <p class="fs-5 text-dark">
+                A collection of beautiful moments and memories shared with our beloved family and friends.
+            </p>
+
         </div>
-        <!-- Gallery end -->
+
+        <div class="row g-4">
+
+            <!-- FOTO 1 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto1.jpg" alt="Wedding Photo 1">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto1.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 2 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto2.jpg" alt="Wedding Photo 2">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto2.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 3 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto3.jpg" alt="Wedding Photo 3">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto3.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 4 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto4.jpg" alt="Wedding Photo 4">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto4.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 5 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto5.jpg" alt="Wedding Photo 5">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto5.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 6 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto6.jpg" alt="Wedding Photo 6">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto6.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 7 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto7.jpg" alt="Wedding Photo 7">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto7.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 8 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto8.jpg" alt="Wedding Photo 8">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto8.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 9 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto9.jpg" alt="Wedding Photo 9">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto9.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 10 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto10.jpg" alt="Wedding Photo 10">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto10.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 11 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto11.jpg" alt="Wedding Photo 11">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto11.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 12 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto12.jpg" alt="Wedding Photo 12">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto12.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 13 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto13.jpg" alt="Wedding Photo 13">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto13.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 14 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto14.jpg" alt="Wedding Photo 14">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto14.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 15 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto15.jpg" alt="Wedding Photo 15">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto15.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOTO 16 -->
+            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="gallery-item">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto16.jpg" alt="Wedding Photo 16">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto16.jpg" data-lightbox="Wedding-Gallery">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
+                        <h5>Our Memory</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Gallery End -->
+
 
 
 
         
-<!-- Bridesmaids & Groomsmen Start -->
+
+<!-- Bridesmaids -->
 <div class="container-fluid gallery position-relative py-5" id="weddingGallery">
 
     <!-- Ornamen Background -->
@@ -1213,22 +1420,23 @@
             </p>
         </div>
 
-        <!-- ================= BRIDESMAIDS ================= -->
+        <!-- Judul Bridesmaids -->
         <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.2s">
             <h2 class="text-dark">Bridesmaids</h2>
             <p class="text-dark">Our beautiful bridesmaids</p>
         </div>
 
+        <!-- Galeri 6 Foto -->
         <div class="row g-4 mb-5">
 
             <!-- Bridesmaid 1 -->
-            <div class="col-md-6 col-lg-4 col-xl">
+            <div class="col-6 col-md-4 col-lg-2">
                 <div class="gallery-item wow fadeInUp" data-wow-delay="0.2s">
                     <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto6.jpg" alt="Bridesmaid 1">
+                        <img class="img-fluid w-100" src="foto1.jpg" alt="Bridesmaid 1">
                         <div class="hover-style"></div>
                         <div class="search-icon">
-                            <a href="foto6.jpg" data-lightbox="Bridesmaids">
+                            <a href="foto1.jpg" data-lightbox="Bridesmaids">
                                 <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
                             </a>
                         </div>
@@ -1241,13 +1449,13 @@
             </div>
 
             <!-- Bridesmaid 2 -->
-            <div class="col-md-6 col-lg-4 col-xl">
+            <div class="col-6 col-md-4 col-lg-2">
                 <div class="gallery-item wow fadeInUp" data-wow-delay="0.3s">
                     <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto6.jpg" alt="Bridesmaid 2">
+                        <img class="img-fluid w-100" src="foto2.jpg" alt="Bridesmaid 2">
                         <div class="hover-style"></div>
                         <div class="search-icon">
-                            <a href="foto6.jpg" data-lightbox="Bridesmaids">
+                            <a href="foto2.jpg" data-lightbox="Bridesmaids">
                                 <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
                             </a>
                         </div>
@@ -1260,13 +1468,13 @@
             </div>
 
             <!-- Bridesmaid 3 -->
-            <div class="col-md-6 col-lg-4 col-xl">
+            <div class="col-6 col-md-4 col-lg-2">
                 <div class="gallery-item wow fadeInUp" data-wow-delay="0.4s">
                     <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto6.jpg" alt="Bridesmaid 3">
+                        <img class="img-fluid w-100" src="foto3.jpg" alt="Bridesmaid 3">
                         <div class="hover-style"></div>
                         <div class="search-icon">
-                            <a href="foto6.jpg" data-lightbox="Bridesmaids">
+                            <a href="foto3.jpg" data-lightbox="Bridesmaids">
                                 <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
                             </a>
                         </div>
@@ -1279,13 +1487,13 @@
             </div>
 
             <!-- Bridesmaid 4 -->
-            <div class="col-md-6 col-lg-4 col-xl">
+            <div class="col-6 col-md-4 col-lg-2">
                 <div class="gallery-item wow fadeInUp" data-wow-delay="0.5s">
                     <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto6.jpg" alt="Bridesmaid 4">
+                        <img class="img-fluid w-100" src="foto4.jpg" alt="Bridesmaid 4">
                         <div class="hover-style"></div>
                         <div class="search-icon">
-                            <a href="foto6.jpg" data-lightbox="Bridesmaids">
+                            <a href="foto4.jpg" data-lightbox="Bridesmaids">
                                 <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
                             </a>
                         </div>
@@ -1298,13 +1506,13 @@
             </div>
 
             <!-- Bridesmaid 5 -->
-            <div class="col-md-6 col-lg-4 col-xl">
+            <div class="col-6 col-md-4 col-lg-2">
                 <div class="gallery-item wow fadeInUp" data-wow-delay="0.6s">
                     <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto6.jpg" alt="Bridesmaid 5">
+                        <img class="img-fluid w-100" src="foto5.jpg" alt="Bridesmaid 5">
                         <div class="hover-style"></div>
                         <div class="search-icon">
-                            <a href="foto6.jpg" data-lightbox="Bridesmaids">
+                            <a href="foto5.jpg" data-lightbox="Bridesmaids">
                                 <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
                             </a>
                         </div>
@@ -1315,10 +1523,31 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Bridesmaid 6 -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="gallery-item wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="gallery-img">
+                        <img class="img-fluid w-100" src="foto6.jpg" alt="Bridesmaid 6">
+                        <div class="hover-style"></div>
+                        <div class="search-icon">
+                            <a href="foto6.jpg" data-lightbox="Bridesmaids">
+                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
+                         style="border-style: double;">
+                        <h5>Bridesmaid 6</h5>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
-<!-- Bridesmaids & Groomsmen End -->
+<!-- Bridesmaids End -->
+
 <!-- Wedding Gift Start -->
 <div class="container-fluid RSVP-form py-5" id="weddingGift">
     <div class="container py-5">
@@ -1355,7 +1584,7 @@
 
                     <h5 class="text-dark">SEABANK</h5>
 
-                    <h4 class="text-primary my-3">
+                    <h4 class="text-primary my-3 account-number">
                         901804748685
                     </h4>
 
@@ -1440,9 +1669,9 @@ function copyRekening(nomor) {
                     </h4>
 
                     <h2 class="mb-3 text-primary">
-                        Nama Mempelai
+                        Yulva
                         <strong>&</strong>
-                        Nama Pasangan
+                        Musliadi
                     </h2>
 
                     <p class="text-white">
@@ -1542,33 +1771,18 @@ function copyRekening(nomor) {
         <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
         
-    
-<!-- SCRIPT NAMA TAMU UNDANGAN -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+    <!-- Menampilkan nama tamu berdasarkan parameter URL ?to= -->
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const guestName = params.get("to");
+            const guestNameElement = document.getElementById("guestName");
 
-    const guestNameElement = document.getElementById("guestName");
-
-    if (!guestNameElement) return;
-
-    // Ambil nama dari parameter URL ?to=
-    const urlParams = new URLSearchParams(window.location.search);
-    const guestName = urlParams.get("to");
-
-    // Tampilkan nama tamu
-    if (guestName && guestName.trim() !== "") {
-
-        guestNameElement.textContent = guestName.trim();
-
-    } else {
-
-        guestNameElement.textContent = "Tamu Undangan";
-
-    }
-
-});
-</script>
-
+            if (guestNameElement && guestName && guestName.trim() !== "") {
+                guestNameElement.textContent = guestName.trim();
+            }
+        })();
+    </script>
 
     <!-- Background Wedding Music -->
     <!-- Simpan file MP3 di folder music dengan nama wedding-song.mp3 -->
