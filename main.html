@@ -1709,18 +1709,7 @@ function copyRekening(nomor) {
         <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
         
-    <!-- Menampilkan nama tamu berdasarkan parameter URL ?to= -->
-    <script>
-        (function () {
-            const params = new URLSearchParams(window.location.search);
-            const guestName = params.get("to");
-            const guestNameElement = document.getElementById("guestName");
-
-            if (guestNameElement && guestName && guestName.trim() !== "") {
-                guestNameElement.textContent = guestName.trim();
-            }
-        })();
-    </script>
+    
 
     <!-- Background Wedding Music -->
     <!-- Simpan file MP3 di folder music dengan nama wedding-song.mp3 -->
