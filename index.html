@@ -1,1857 +1,450 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Wedding Invitation</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<title>The Wedding of Yulva & Musliadi</title>
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body data-bs-spy="scroll" data-bs-target="#navBar" id="weddingHome">
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" role="status"></div>
-        </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar start -->
-        <div class="container-fluid sticky-top px-0">
-            <div class="container-fluid">
-                <div class="container px-0">
-                    <nav class="navbar navbar-light navbar-expand-xl" id="navBar">
-                        <a href="index.html" class="navbar-brand">
-                            <h4 class="text-primary display-6 fw-bold mb-0">Musliadi<strong class="text-secondary">&</strong>Yulva</h4>
-                        </a>
-                        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                            <span class="fa fa-bars text-primary"></span>
-                        </button>
-                        <div class="collapse navbar-collapse py-3" id="navbarCollapse">
-                            <div class="navbar-nav mx-auto border-top">
-                                <a href="#weddingHome" class="nav-item nav-link active">Home</a>
-                                <a href="#weddingAbout" class="nav-item nav-link">About</a>
-                                <a href="#weddingStory" class="nav-item nav-link">Story</a>
-                                <a href="#weddingGallery" class="nav-item nav-link">Gallery</a>
-                                <!-- <a href="#weddingTimeline" class="nav-item nav-link">Timeline</a>
-                                    <a href="#weddingRsvp" class="nav-item nav-link">RSVP</a> -->
-                            </div>
-                            <!-- <div class="d-flex align-items-center flex-nowrap pt-xl-0">
-                                <a href="#weddingRsvp" class="btn btn-primary btn-primary-outline-0 py-2 px-4 ms-4">Book Attendance</a>
-                            </div> -->
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <!-- Navbar End -->
-
-
-
-        
-<!-- Guest Name Start -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
-    .guest-greeting {
-        background: #fffaf7;
-        padding: 32px 15px 25px;
-        text-align: center;
-    }
-
-    /* Tulisan Kepada Yth. */
-    .guest-greeting .guest-label {
-        font-family: 'Lato', sans-serif;
-        color: #9b7653;
-        font-size: 15px;
-        font-weight: 400;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-    }
-
-    /* Nama tamu */
-    .guest-greeting .guest-name {
-        font-family: 'Cormorant Garamond', serif;
-        color: #8b6548;
-        font-size: clamp(30px, 5vw, 43px);
-        font-weight: 600;
-        line-height: 1.3;
-        margin: 0;
-        overflow-wrap: anywhere;
-    }
-
-    /* Tampilan HP */
-    @media (max-width: 576px) {
-        .guest-greeting {
-            padding: 25px 15px 20px;
-        }
-
-        .guest-greeting .guest-name {
-            font-size: 32px;
-        }
-
-        .guest-greeting .guest-label {
-            font-size: 13px;
-        }
-    }
-</style>
-
-<section class="guest-greeting" aria-label="Nama tamu undangan">
-
-    <p class="guest-label">Kepada Yth.</p>
-
-    <h2 class="guest-name" id="guestName">
-        Tamu Undangan
-    </h2>
-
-    <p class="guest-label mt-2 mb-0">
-        Dengan hormat, kami mengundang Anda
-    </p>
-
-</section>
-
-<!-- Guest Name End -->
-
-
-        <!-- Carousel Start -->
-        
-
-<style>
-    /* =====================================
-       WEDDING CAROUSEL
-    ===================================== */
-
-    .carousel-header {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .carousel-header .carousel-item {
-        position: relative;
-        height: 700px;
-        overflow: hidden;
-        background: #222;
-    }
-
-    /* Foto */
-    .carousel-header .carousel-item img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-    }
-
-    /* Overlay foto */
-    .carousel-header .carousel-item::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.40);
-        z-index: 1;
-    }
-
-    /* Caption tepat di tengah */
-    .carousel-header .carousel-caption {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        margin: 0;
-
-        display: flex !important;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        text-align: center !important;
-        transform: none !important;
-
-        z-index: 2;
-    }
-
-    /* Pembungkus tulisan */
-    .carousel-header .caption-content {
-        width: 100%;
-        max-width: 900px;
-        margin: 0 auto;
-        text-align: center !important;
-    }
-
-    /* Semua tulisan rata tengah */
-    .carousel-header .caption-content h1,
-    .carousel-header .caption-content h4 {
-        width: 100%;
-        text-align: center !important;
-    }
-
-    /* Nama pengantin */
-    .carousel-header .caption-content h1 {
-        font-size: clamp(2.5rem, 6vw, 5.5rem);
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 25px;
-    }
-
-    /* Tulisan Arab, judul dan tanggal */
-    .carousel-header .caption-content h4 {
-        font-size: clamp(0.8rem, 2vw, 1.25rem);
-        letter-spacing: 3px;
-        line-height: 1.7;
-    }
-
-    /* Bingkai tulisan */
-    .carousel-header .caption-border {
-        display: inline-block;
-        max-width: 100%;
-        padding: 12px 20px;
-        margin-bottom: 25px;
-        border-top: 2px double rgba(255, 255, 255, 0.8);
-        border-bottom: 2px double rgba(255, 255, 255, 0.8);
-        text-align: center;
-    }
-
-    /* Indikator dan tombol */
-    .carousel-header .carousel-indicators,
-    .carousel-header .carousel-control-prev,
-    .carousel-header .carousel-control-next {
-        z-index: 3;
-    }
-
-    /* =====================================
-       TABLET
-    ===================================== */
-
-    @media (max-width: 991px) {
-        .carousel-header .carousel-item {
-            height: 600px;
-        }
-
-        .carousel-header .carousel-caption {
-            padding: 20px 50px;
-        }
-    }
-
-    /* =====================================
-       MOBILE
-    ===================================== */
-
-    @media (max-width: 767px) {
-        .carousel-header .carousel-item {
-            height: 600px;
-        }
-
-        .carousel-header .carousel-caption {
-            padding: 15px 35px;
-        }
-
-        .carousel-header .caption-content {
-            max-width: 100%;
-        }
-
-        .carousel-header .caption-content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .carousel-header .caption-content h4 {
-            font-size: 0.75rem;
-            letter-spacing: 1.5px;
-        }
-
-        .carousel-header .caption-border {
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-    }
-</style>
-
-
-<!-- Wedding Carousel Start -->
-<div class="container-fluid carousel-header px-0">
-
-    <div id="carouselId"
-         class="carousel slide"
-         data-bs-ride="carousel"
-         data-bs-interval="5000">
-
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-
-            <button type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"></button>
-
-            <button type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-
-            <button type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-
-        </div>
-
-
-        <div class="carousel-inner">
-
-            <!-- SLIDE 1 -->
-            <div class="carousel-item active">
-
-                <img src="slide1.jpg"
-                     alt="Foto Yulva dan Adi">
-
-                <div class="carousel-caption">
-
-                    <div class="caption-content animated zoomIn">
-
-                        <div class="caption-border">
-
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
-                                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْمِ
-                            </h4>
-
-                            <h4 class="text-white text-uppercase wedding-heading mb-0">
-                                WE ARE GETTING MARRIED
-                            </h4>
-
-                        </div>
-
-                        <h1 class="text-capitalize text-white">
-                            Yulva
-                            <i class="fa fa-heart text-primary"></i>
-                            Musliadi
-                        </h1>
-
-                        <div class="caption-border">
-
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
-                             12 December 2026
-                            </h4>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- SLIDE 2 -->
-            <div class="carousel-item">
-
-                <img src="slide3.jpg"
-                     alt="Foto Yulva dan Adi">
-
-                <div class="carousel-caption">
-
-                    <div class="caption-content animated zoomIn">
-
-                        <div class="caption-border">
-
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
-                                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْمِ
-                            </h4>
-
-                            <h4 class="text-white text-uppercase wedding-heading mb-0">
-                                WE ARE GETTING MARRIED
-                            </h4>
-
-                        </div>
-
-                        <h1 class="text-capitalize text-white">
-                            Yulva
-                            <i class="fa fa-heart text-primary"></i>
-                            Musliadi
-                        </h1>
-
-                        <div class="caption-border">
-
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
-                                 12 December 2026
-                            </h4>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- SLIDE 3 -->
-            <div class="carousel-item">
-
-                <img src="slide4.jpg"
-                     alt="Foto Yulva dan Adi">
-
-                <div class="carousel-caption">
-
-                    <div class="caption-content animated zoomIn">
-
-                        <div class="caption-border">
-
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
-                                بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْمِ
-                            </h4>
-
-                            <h4 class="text-white text-uppercase wedding-heading mb-0">
-                                WE ARE GETTING MARRIED
-                            </h4>
-
-                        </div>
-
-                        <h1 class="text-capitalize text-white">
-                            Yulva
-                            <i class="fa fa-heart text-primary"></i>
-                            Musliadi
-                        </h1>
-
-                        <div class="caption-border">
-
-                            <h4 class="text-white text-uppercase fw-bold mb-0">
-                                 12 December 2026
-                            </h4>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-
-        <!-- Previous Button -->
-        <button class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="prev">
-
-            <span class="carousel-control-prev-icon"
-                  aria-hidden="true"></span>
-
-            <span class="visually-hidden">Previous</span>
-
-        </button>
-
-
-        <!-- Next Button -->
-        <button class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselId"
-                data-bs-slide="next">
-
-            <span class="carousel-control-next-icon"
-                  aria-hidden="true"></span>
-
-            <span class="visually-hidden">Next</span>
-
-        </button>
-
-    </div>
-
-</div>
-<!-- Wedding Carousel End -->
-
-<!-- Wedding Carousel End -->
-
-        <!-- Carousel End -->
-
-
-        <!-- Hello! Start -->
-        <style>
-    /* Ukuran foto pengantin */
-    #weddingAbout .img-border {
-        width: 220px;
-        height: 280px;
-        object-fit: cover;
-        flex-shrink: 0;
-    }
-
-    /* Posisi foto dan teks */
-    #weddingAbout .bride-content,
-    #weddingAbout .groom-content {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
-
-    #weddingAbout .bride-content {
-        justify-content: flex-end;
-    }
-
-    #weddingAbout .groom-content {
-        justify-content: flex-start;
-    }
-
-    /* Tampilan tablet dan HP */
-    @media (max-width: 991px) {
-        #weddingAbout .bride-content,
-        #weddingAbout .groom-content {
-            justify-content: center;
-        }
-
-        #weddingAbout .img-border {
-            width: 180px;
-            height: 230px;
-        }
-    }
-
-    @media (max-width: 576px) {
-        #weddingAbout .bride-content,
-        #weddingAbout .groom-content {
-            gap: 10px;
-        }
-
-        #weddingAbout .img-border {
-            width: 130px;
-            height: 170px;
-        }
-
-        #weddingAbout h3 {
-            font-size: 20px;
-        }
-
-        #weddingAbout p {
-            font-size: 12px;
-            line-height: 22px !important;
-        }
-
-        #weddingAbout .fa-heart {
-            font-size: 35px;
-        }
-    }
-</style>
-
-<div class="container-fluid position-relative py-5" id="weddingAbout">
-
-    <div class="position-absolute" style="top: -35px; right: 0;">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="position-absolute" style="top: -10px; left: 0; transform: rotate(150deg);">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="container position-relative py-5">
-
-        <div class="mx-auto text-center mb-5 wow fadeInUp"
-             data-wow-delay="0.1s" style="max-width: 800px;">
-            <h1 class="text-primary display-1">Hello!</h1>
-            <h4 class="text-dark mb-0 invitation-heading">We invite you to celebrate our wedding</h4>
-        </div>
-
-        <div class="row g-4 align-items-center">
-
-            <!-- Bride -->
-<div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-    <div class="bride-content">
-        <div class="text-end my-auto">
-            <h3 class="text-primary mb-3 bride-name">Yulva Sulistia</h3>
-            <p class="text-dark mb-0 bride-description">
-                Anak kedua dari pasangan<br>
-                Bapak Legiman & Ibu Mariani br. Purba
-            </p>
-        </div>
-
-        <img src="yulva.jpeg" class="img-fluid img-border" alt="Yulva">
-    </div>
-</div>
-
-<!-- Heart -->
-<div class="col-lg-2 wow fadeIn" data-wow-delay="0.5s">
-    <div class="d-flex align-items-center justify-content-center">
-        <i class="fa fa-heart fa-5x text-primary"></i>
-    </div>
-</div>
-
-<!-- Groom -->
-<div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-    <div class="groom-content">
-        <img src="adi.jpeg" class="img-fluid img-border" alt="Musliadi">
-
-        <div class="my-auto">
-            <h3 class="text-primary mb-3 groom-name">Musliadi</h3>
-            <p class="text-dark mb-0 groom-description">
-                Anak kedua dari pasangan<br>
-                Bapak Lamuse Laupe & Ibu Suriani
-            </p>
-        </div>
-    </div>
-</div>
-
-        </div>
-    </div>
-</div>
-        <!-- Hello! End -->
-
-
-        
-<!-- About / Wedding Prayer Start -->
-<div class="container-fluid position-relative overflow-hidden bg-secondary py-5">
-
-    <!-- Decorative Flowers -->
-    <img src="bg-flower.png"
-         class="img-fluid position-absolute top-0"
-         style="right: -15px; transform: rotate(270deg); opacity: 0.5;"
-         alt="">
-
-    <img src="bg-flower.png"
-         class="img-fluid position-absolute"
-         style="bottom: 10px; left: -15px; transform: rotate(90deg); opacity: 0.5;"
-         alt="">
-
-    <div class="container py-5 position-relative">
-        <div class="row justify-content-center text-center">
-
-            <div class="col-lg-9 wow fadeIn" data-wow-delay="0.2s">
-
-                <!-- Section Title -->
-                <h5 class="text-uppercase text-primary fw-bold mb-3">
-                    Doa Pernikahan
-                </h5>
-
-                <h1 class="display-5 text-white mb-5">
-                    Semoga Menjadi Keluarga Sakinah, Mawaddah, Warahmah
-                </h1>
-
-                <!-- Couple Photo -->
-                <div class="row justify-content-center mb-5">
-                    <div class="col-lg-9 col-md-10 col-12">
-
-                        <div class="border-white bg-primary p-2"
-                             style="border-style: double; border-width: 5px;">
-
-                            <img src="slide1.jpg"
-                                 class="img-fluid w-100"
-                                 alt="Foto Yulva dan Adi">
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Wedding Prayer -->
-                <div class="px-lg-5">
-
-                    <h2 class="text-white fw-bold mb-4">
-                        Yulva & Musliadi
-                    </h2>
-
-                    <p class="text-white fs-5 mb-4">
-                        بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ
-                        وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
-                    </p>
-
-                    <p class="text-white fs-5 mb-4">
-                        "Baarakallahu laka, wa baaraka 'alaika,
-                        wa jama'a bainakumaa fii khair."
-                    </p>
-
-                    <p class="text-white fs-5 mb-4">
-                        Semoga Allah SWT senantiasa melimpahkan
-                        keberkahan kepada kalian berdua, menyatukan
-                        hati dalam kebaikan, serta menjadikan rumah
-                        tangga yang penuh cinta, kasih sayang,
-                        dan ketentraman.
-                    </p>
-
-                    <p class="text-white fs-5 mb-0">
-                        Semoga selalu saling menjaga dalam suka
-                        maupun duka, saling menguatkan dalam setiap
-                        ujian, dan bersama-sama meraih ridha Allah
-                        SWT hingga Jannah-Nya.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- About / Wedding Prayer End -->
-
-
-
-        
-<!-- Story Start -->
-
-<style>
-    /* =====================================
-       UKURAN DAN TAMPILAN FOTO LOVE STORY
-       ===================================== */
-
-    #weddingStory .story-img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        object-position: center center;
-    }
-
-    /* =====================================
-       PENGATURAN POSISI FOTO SECARA MANUAL
-       Format: object-position: horizontal vertical;
-       ===================================== */
-
-    /* Foto First Meet */
-    #weddingStory .story-1 {
-        object-position: 50% 20%;
-    }
-
-    /* Foto First Date */
-    #weddingStory .story-2 {
-        object-position: 50% 90%;
-    }
-
-    /* Foto Engagement */
-    #weddingStory .story-3 {
-        object-position: 50% 50%;
-    }
-
-    /* Tampilan Tablet */
-    @media (max-width: 768px) {
-        #weddingStory .story-img {
-            height: 250px;
-        }
-    }
-
-    /* Tampilan HP */
-    @media (max-width: 576px) {
-        #weddingStory .story-img {
-            height: 220px;
-        }
-    }
-</style>
-
-<div class="container-fluid story position-relative py-5" id="weddingStory">
-
-    <!-- Dekorasi -->
-    <div class="position-absolute" style="top: -50px; right: 0;">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="position-absolute" style="top: -15px; left: 0; transform: rotate(150deg);">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="container position-relative py-5">
-
-        <!-- Judul -->
-        <div class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            <h5 class="text-uppercase text-primary fw-bold mb-3">
-                Our Journey
-            </h5>
-
-            <h1 class="display-4">Our Love Story</h1>
-
-            <p class="text-muted mt-3">
-                Every love story is beautiful, but ours is my favorite.
-            </p>
-        </div>
-
-        <div class="story-timeline">
-
-            <!-- First Meet -->
-            <div class="row align-items-stretch wow fadeInUp mb-4"
-                 data-wow-delay="0.2s">
-
-                <div class="col-md-6 text-md-end border-top border-end border-secondary p-4">
-                    <div class="d-flex align-items-center h-100">
-                        <img src="meeting.jpeg"
-                             class="img-fluid w-100 img-border story-img story-1"
-                             alt="First Meet">
-                    </div>
-                </div>
-
-                <div class="col-md-6 border-start border-top border-secondary p-4">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-
-                        <h4 class="text-dark mb-2">First Meet</h4>
-
-                        <p class="text-uppercase text-primary mb-3"
-                           style="letter-spacing: 3px;">
-                            30 Mei 2023
-                        </p>
-
-                        <p class="m-0 fs-5">
-                            Every beautiful story has a beginning, and ours began
-                            with a simple meeting. We never knew that a little
-                            moment would become the beginning of something so meaningful.
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- First Date -->
-            <div class="row flex-column-reverse flex-md-row align-items-stretch wow fadeInUp mb-4"
-                 data-wow-delay="0.3s">
-
-                <div class="col-md-6 text-md-end border-top border-end border-secondary p-4">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-
-                        <h4 class="text-dark mb-2">First Date</h4>
-
-                        <p class="text-uppercase text-primary mb-3"
-                           style="letter-spacing: 3px;">
-                            19 September 2023
-                        </p>
-
-                        <p class="m-0 fs-5">
-                            Our first date was filled with little smiles, endless
-                            conversations, and unforgettable moments. It was the
-                            day we realized that being together felt like home.
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="col-md-6 border-start border-top border-secondary p-4">
-                    <div class="d-flex align-items-center h-100">
-                        <img src="dating.jpeg"
-                             class="img-fluid w-100 img-border story-img story-2"
-                             alt="First Date">
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Engagement -->
-            <div class="row align-items-stretch wow fadeInUp"
-                 data-wow-delay="0.4s">
-
-                <div class="col-md-6 text-md-end border-top border-end border-bottom border-secondary p-4">
-                    <div class="d-flex align-items-center h-100">
-                        <img src="tunangan.jpg"
-                             class="img-fluid w-100 img-border story-img story-3"
-                             alt="Engagement">
-                    </div>
-                </div>
-
-                <div class="col-md-6 border-start border-top border-bottom border-secondary p-4">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-
-                        <h4 class="text-dark mb-2">Engagement</h4>
-
-                        <p class="text-uppercase text-primary mb-3"
-                           style="letter-spacing: 3px;">
-                            25 Oktober 2026
-                        </p>
-
-                        <p class="m-0 fs-5">
-                            With love and sincere promises, we decided to take
-                            another step together. A beautiful promise to keep
-                            choosing each other and to build a future filled with love.
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- Story End -->
-
-
-        <!-- Story End -->
-
-
-        <!--- Wedding Date -->
-        
-<!-- Wedding Date Start -->
-<div class="container-fluid wedding-date-bg position-relative py-5">
-
-    <div class="position-absolute" style="top: -100px; right: 0;">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="container py-5 wow zoomIn" data-wow-delay="0.1s">
-
-        <div class="wedding-date text-center bg-light p-5"
-             style="border-style: double !important; border: 15px solid rgba(253, 93, 93, 0.5);">
-
-            <div class="wedding-date-content">
-
-                <!-- Wedding Date -->
-                <div class="d-inline-block border-end-0 border-start-0 border-secondary p-2 mb-4"
-                     style="border-style: double;">
-
-                    <h4 class="text-dark text-uppercase fw-bold mb-0"
-                        style="letter-spacing: 3px;">
-                        12 Desember 2026
-                    </h4>
-
-                </div>
-
-                <!-- Wedding Title -->
-                <h1 class="display-4">
-                    Menuju Hari Bahagia Kami
-                </h1>
-
-                <p class="text-dark fs-5">
-                    Yulva & Musliadi 
-                </p>
-
-                <p class="text-dark fs-5">
-                    Dengan izin Allah SWT, kami akan memulai perjalanan
-                    baru dalam ikatan suci pernikahan.
-                </p>
-
-                <!-- Countdown -->
-                <div id="wedding-countdown"
-                     class="d-flex align-items-center justify-content-center flex-wrap mb-5">
-
-                    <div class="text-dark fs-2 mx-3">
-                        <div id="days" class="fw-bold">00</div>
-                        <span class="fs-6">Hari</span>
-                    </div>
-
-                    <div class="text-dark fs-2 mx-3">
-                        <div id="hours" class="fw-bold">00</div>
-                        <span class="fs-6">Jam</span>
-                    </div>
-
-                    <div class="text-dark fs-2 mx-3">
-                        <div id="minutes" class="fw-bold">00</div>
-                        <span class="fs-6">Menit</span>
-                    </div>
-
-                    <div class="text-dark fs-2 mx-3">
-                        <div id="seconds" class="fw-bold">00</div>
-                        <span class="fs-6">Detik</span>
-                    </div>
-
-                </div>
-
-                <!-- Event Message -->
-                <div id="wedding-message"
-                     class="text-primary fw-bold fs-3 mb-4"
-                     style="display: none;">
-
-                    Alhamdulillah, Hari Bahagia Telah Tiba!
-
-                </div>
-
-                
-
-            </div>
-
-            <!-- Decorative Images -->
-            <div class="position-absolute"
-                 style="top: 15%; right: -30px; transform: rotate(320deg); opacity: 0.5; z-index: 1;">
-
-                <img src="attendance-bg.png" class="img-fluid" alt="">
-
-            </div>
-
-            <div class="position-absolute"
-                 style="top: 15%; left: -10px; transform: rotate(-320deg); opacity: 0.5; z-index: 1;">
-
-                <img src="attendance-bg.png" class="img-fluid" alt="">
-
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- Wedding Date End -->
-
-
-<!-- Wedding Countdown JavaScript -->
-<script>
-
-    // Tanggal dan waktu pernikahan
-    // Format: Tahun-Bulan-Tanggal Jam:Menit:Detik + Zona Waktu
-    // Contoh: 12 Desember 2026 pukul 08.00 WITA
-
-    const weddingDate = new Date("2026-12-12T08:00:00+08:00").getTime();
-
-
-    // Fungsi hitung mundur
-    function updateWeddingCountdown() {
-
-        const now = new Date().getTime();
-
-        const distance = weddingDate - now;
-
-
-        // Jika waktu pernikahan sudah tiba
-        if (distance <= 0) {
-
-            document.getElementById("days").innerHTML = "00";
-            document.getElementById("hours").innerHTML = "00";
-            document.getElementById("minutes").innerHTML = "00";
-            document.getElementById("seconds").innerHTML = "00";
-
-            document.getElementById("wedding-countdown").style.display = "none";
-
-            document.getElementById("wedding-message").style.display = "block";
-
-            clearInterval(countdownInterval);
-
-            return;
-        }
-
-
-        // Menghitung hari, jam, menit, dan detik
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-        const hours = Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-
-        const minutes = Math.floor(
-            (distance % (1000 * 60 * 60)) / (1000 * 60)
-        );
-
-        const seconds = Math.floor(
-            (distance % (1000 * 60)) / 1000
-        );
-
-
-        // Menampilkan hasil ke halaman website
-        document.getElementById("days").innerHTML = String(days).padStart(2, "0");
-
-        document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
-
-        document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
-
-        document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
-
-    }
-
-
-    // Jalankan pertama kali agar angka langsung muncul
-    updateWeddingCountdown();
-
-
-    // Perbarui setiap 1 detik
-    const countdownInterval = setInterval(updateWeddingCountdown, 1000);
-
-</script>
-
-
-
-
-        
-<!-- Gallery Start -->
-<div class="container-fluid gallery position-relative py-5" id="weddingGallery">
-
-    <div class="position-absolute" style="top: -95px; right: 0;">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="container position-relative py-5">
-
-        <!-- Judul Gallery -->
-        <div class="text-center mx-auto pb-5 wow fadeInUp"
-             data-wow-delay="0.1s"
-             style="max-width: 800px;">
-
-            <h1 class="display-2 text-dark">Wedding Gallery</h1>
-
-            <p class="fs-5 text-dark">
-                A collection of beautiful moments and memories shared with our beloved family and friends.
-            </p>
-
-        </div>
-
-        <div class="row g-4">
-
-            <!-- FOTO 1 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto1.jpg" alt="Wedding Photo 1">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto1.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 2 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto2.jpg" alt="Wedding Photo 2">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto2.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 3 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto3.jpg" alt="Wedding Photo 3">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto3.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 4 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto4.jpg" alt="Wedding Photo 4">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto4.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 5 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto5.jpg" alt="Wedding Photo 5">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto5.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 6 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto6.jpg" alt="Wedding Photo 6">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto6.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 7 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto7.jpg" alt="Wedding Photo 7">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto7.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 8 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto8.jpg" alt="Wedding Photo 8">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto8.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 9 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto9.jpeg" alt="Wedding Photo 9">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto9.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 10 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto10.jpeg" alt="Wedding Photo 10">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto10.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 11 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="date.jpg" alt="Wedding Photo 11">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="date.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 12 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="meet.jpg" alt="Wedding Photo 12">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="meet.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 13 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto13.jpg" alt="Wedding Photo 13">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto13.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 14 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto14.jpg" alt="Wedding Photo 14">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto14.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 15 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto15.jpg" alt="Wedding Photo 15">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto15.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- FOTO 16 -->
-            <div class="col-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="gallery-item">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto16.jpg" alt="Wedding Photo 16">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto16.jpg" data-lightbox="Wedding-Gallery">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-4" style="border-style: double;">
-                        <h5>Our Memory</h5>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- Gallery End -->
-
-
-
-
-        
-
-<!-- Bridesmaids -->
-<div class="container-fluid gallery position-relative py-5" id="weddingGallery">
-
-    <!-- Ornamen Background -->
-    <div class="position-absolute" style="top: -95px; right: 0;">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-    <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="container position-relative py-5">
-
-        <!-- Judul Utama -->
-        <div class="text-center mx-auto pb-5 wow fadeInUp"
-             data-wow-delay="0.1s" style="max-width: 800px;">
-            <h1 class="display-2 text-dark">Bridesmaids</h1>
-            <p class="fs-5 text-dark">
-                The special people who make our moments more beautiful.
-            </p>
-        </div>
-
-        <!-- Judul Bridesmaids -->
-        <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.2s">
-            <h2 class="text-dark">Bridesmaids</h2>
-            <p class="text-dark">Our beautiful bridesmaids</p>
-        </div>
-
-        <!-- Galeri 6 Foto -->
-        <div class="row g-4 mb-5">
-
-            <!-- Bridesmaid 1 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto1.jpg" alt="Bridesmaid 1">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto1.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 1</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 2 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto2.jpg" alt="Bridesmaid 2">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto2.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 2</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 3 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto3.jpg" alt="Bridesmaid 3">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto3.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 3</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 4 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto4.jpg" alt="Bridesmaid 4">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto4.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 4</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 5 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto5.jpg" alt="Bridesmaid 5">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto5.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 5</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 6 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto6.jpg" alt="Bridesmaid 6">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto6.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 6</h5>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- Bridesmaids End -->
-
-<!-- Wedding Gift Start -->
-<div class="container-fluid RSVP-form py-5" id="weddingGift">
-    <div class="container py-5">
-
-        <!-- Judul -->
-        <div class="mb-5 text-center mx-auto wow fadeIn"
-             data-wow-delay="0.1s" style="max-width: 800px;">
-            <h1 class="display-2 text-primary">Wedding Gift</h1>
-            <p class="fs-5 text-dark">
-                Your presence is the greatest gift to us.
-                However, if you wish to give a gift, we would be
-                grateful for your blessings and generosity.
-            </p>
-        </div>
-
-        <!-- Rekening Mempelai -->
-        <div class="row g-4 justify-content-center">
-
-            <!-- Rekening Mempelai Wanita -->
-            <div class="col-md-6 col-lg-5 wow fadeInUp"
-                 data-wow-delay="0.2s">
-                <div class="p-5 border-secondary text-center h-100"
-                     style="border-style: double;">
-
-                    <h3 class="text-primary mb-3">The Bride</h3>
-                    <p class="text-dark mb-4">Mempelai Wanita</p>
-
-                    <!-- Logo Bank -->
-                    <div class="mb-4">
-                        <img src="bank.jpg"
-                             alt="Bank Logo"
-                             style="max-width: 130px; height: 60px; object-fit: contain;">
-                    </div>
-
-                    <h5 class="text-dark">SEABANK</h5>
-
-                    <h4 class="text-primary my-3 account-number">
-                        901804748685
-                    </h4>
-
-                    <p class="text-dark mb-4">
-                        A/n Yulva Sulistia
-                    </p>
-
-                    <button class="btn btn-primary btn-primary-outline-0 py-2 px-4"
-                            onclick="copyRekening('901804748685')">
-                        <i class="fas fa-copy me-2"></i>
-                        Salin Nomor Rekening
-                    </button>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Penutup -->
-        <div class="text-center mt-5 wow fadeInUp"
-             data-wow-delay="0.3s">
-            <p class="text-dark fs-5">
-                Thank you for your love, prayers, and blessings.
-            </p>
-            <h4 class="text-primary">
-                With Love, The Bride & Groom
-            </h4>
-        </div>
-
-    </div>
-</div>
-<!-- Wedding Gift End -->
-
-
-<!-- Script Salin Nomor Rekening -->
-<script>
-function copyRekening(nomor) {
-    navigator.clipboard.writeText(nomor).then(function() {
-        alert("Nomor rekening berhasil disalin!");
-    }).catch(function() {
-        alert("Gagal menyalin nomor rekening.");
-    });
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-</script>
+
+body {
+    min-height: 100vh;
+    background: #eeeae4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HALAMAN UNDANGAN */
+.invitation {
+    width: 100%;
+    max-width: 460px;
+    min-height: 680px;
+    background: #fffefa;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.10);
+}
+
+/* AREA KONTEN */
+.content {
+    position: relative;
+    z-index: 3;
+    padding: 180px 25px 65px;
+}
+
+/* ORNAMEN BUNGA */
+.flower-top {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.flower-left {
+    position: absolute;
+    width: 115px;
+    height: 370px;
+    left: 0;
+    top: 100px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.flower-right {
+    position: absolute;
+    width: 115px;
+    height: 370px;
+    right: 0;
+    top: 100px;
+    transform: scaleX(-1);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* TEKS */
+.small-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    color: #7e8172;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #858477;
+    margin-bottom: 25px;
+}
+
+.couple-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 43px;
+    line-height: 1;
+    letter-spacing: 7px;
+    font-weight: 600;
+    color: #343b36;
+    text-transform: uppercase;
+}
+
+.couple-lastname {
+    font-size: 13px;
+    letter-spacing: 5px;
+    color: #656b62;
+    margin-top: 7px;
+}
+
+.ampersand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-style: italic;
+    color: #a78d7a;
+    margin: 13px 0;
+}
+
+.invite-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #74776d;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+/* NAMA TAMU */
+.guest-section {
+    margin-top: 10px;
+}
+
+.guest-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #888779;
+    margin-bottom: 12px;
+}
+
+.guest-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #414c42;
+    overflow-wrap: anywhere;
+    padding: 0 10px;
+}
+
+.guest-line {
+    width: 75px;
+    height: 1px;
+    background: #c4ad9b;
+    margin: 15px auto;
+}
+
+.guest-description {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    font-style: italic;
+    color: #858477;
+    line-height: 1.5;
+}
+
+/* TOMBOL */
+.open-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 27px;
+    border: 1px solid #a99a83;
+    color: #66705f;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 3px;
+    transition: 0.4s;
+    background: rgba(255,255,255,0.85);
+}
+
+.open-button:hover {
+    background: #87917e;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    font-family: 'Great Vibes', cursive;
+    font-size: 23px;
+    color: #a18c79;
+    margin-top: 28px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .invitation {
+        min-height: 680px;
+    }
+
+    .content {
+        padding-top: 180px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .flower-top {
+        height: 220px;
+    }
+
+    .flower-left,
+    .flower-right {
+        width: 90px;
+        height: 330px;
+    }
+
+    .couple-name {
+        font-size: 37px;
+        letter-spacing: 5px;
+    }
+
+    .guest-name {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="invitation">
+
+    <!-- BUNGA BAGIAN ATAS -->
+    <svg class="flower-top" viewBox="0 0 460 250"
+         preserveAspectRatio="xMidYMin slice"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+            <g id="leaf">
+                <ellipse cx="0" cy="0" rx="7" ry="19"
+                         fill="#78947b"
+                         transform="rotate(35)"/>
+                <path d="M0 0 Q0 -10 0 -18"
+                      stroke="#d1e0ca" fill="none"/>
+            </g>
+
+            <g id="pinkflower">
+                <ellipse cx="0" cy="-9" rx="5" ry="11" fill="#e8c5c2"/>
+                <ellipse cx="9" cy="0" rx="5" ry="11" fill="#f0d5d0" transform="rotate(90 9 0)"/>
+                <ellipse cx="0" cy="9" rx="5" ry="11" fill="#e8c5c2"/>
+                <ellipse cx="-9" cy="0" rx="5" ry="11" fill="#f5ddd7" transform="rotate(90 -9 0)"/>
+                <circle cx="0" cy="0" r="4" fill="#c5a17c"/>
+            </g>
+        </defs>
+
+        <!-- Cabang -->
+        <g fill="none" stroke="#738b71" stroke-width="2">
+            <path d="M-10 0 Q60 65 100 160 Q130 195 165 210"/>
+            <path d="M100 0 Q150 70 190 135 Q220 170 250 190"/>
+            <path d="M260 0 Q280 65 310 120 Q335 160 365 180"/>
+            <path d="M460 0 Q390 65 370 120 Q345 160 330 205"/>
+            <path d="M190 0 Q205 65 225 115"/>
+        </g>
+
+        <!-- Daun -->
+        <g>
+            <use href="#leaf" x="42" y="60" transform="rotate(-50 42 60)"/>
+            <use href="#leaf" x="65" y="90" transform="rotate(55 65 90)"/>
+            <use href="#leaf" x="100" y="115" transform="rotate(-50 100 115)"/>
+            <use href="#leaf" x="125" y="150" transform="rotate(50 125 150)"/>
+            <use href="#leaf" x="175" y="90" transform="rotate(-45 175 90)"/>
+            <use href="#leaf" x="205" y="130" transform="rotate(50 205 130)"/>
+            <use href="#leaf" x="300" y="75" transform="rotate(-50 300 75)"/>
+            <use href="#leaf" x="325" y="115" transform="rotate(45 325 115)"/>
+            <use href="#leaf" x="380" y="80" transform="rotate(-55 380 80)"/>
+            <use href="#leaf" x="405" y="125" transform="rotate(45 405 125)"/>
+        </g>
+
+        <!-- Bunga -->
+        <g>
+            <use href="#pinkflower" x="25" y="40"/>
+            <use href="#pinkflower" x="75" y="110"/>
+            <use href="#pinkflower" x="120" y="65"/>
+            <use href="#pinkflower" x="155" y="155"/>
+            <use href="#pinkflower" x="215" y="60"/>
+            <use href="#pinkflower" x="260" y="130"/>
+            <use href="#pinkflower" x="310" y="45"/>
+            <use href="#pinkflower" x="365" y="100"/>
+            <use href="#pinkflower" x="425" y="45"/>
+            <use href="#pinkflower" x="395" y="165"/>
+        </g>
+
+        <!-- Bunga kecil -->
+        <g fill="#efd8d1">
+            <circle cx="45" cy="135" r="4"/>
+            <circle cx="90" cy="35" r="4"/>
+            <circle cx="180" cy="35" r="4"/>
+            <circle cx="235" cy="155" r="4"/>
+            <circle cx="285" cy="85" r="4"/>
+            <circle cx="345" cy="35" r="4"/>
+            <circle cx="440" cy="125" r="4"/>
+        </g>
+    </svg>
+
+    <!-- BUNGA SISI KIRI -->
+    <svg class="flower-left" viewBox="0 0 120 370"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <path d="M10 0 Q65 80 25 180 Q5 260 55 360"
+              fill="none" stroke="#84977c" stroke-width="2"/>
+
+        <g fill="#78977d">
+            <ellipse cx="30" cy="65" rx="8" ry="22" transform="rotate(-45 30 65)"/>
+            <ellipse cx="65" cy="110" rx="8" ry="22" transform="rotate(45 65 110)"/>
+            <ellipse cx="25" cy="175" rx="8" ry="22" transform="rotate(-45 25 175)"/>
+            <ellipse cx="45" cy="240" rx="8" ry="22" transform="rotate(45 45 240)"/>
+            <ellipse cx="50" cy="315" rx="8" ry="22" transform="rotate(-45 50 315)"/>
+        </g>
+
+        <g fill="#e9c6c2">
+            <circle cx="20" cy="95" r="10"/>
+            <circle cx="36" cy="95" r="10"/>
+            <circle cx="28" cy="80" r="10"/>
+            <circle cx="28" cy="108" r="10"/>
+            <circle cx="28" cy="95" r="5"/>
+
+            <circle cx="55" cy="205" r="9"/>
+            <circle cx="70" cy="205" r="9"/>
+            <circle cx="63" cy="191" r="9"/>
+            <circle cx="63" cy="219" r="9"/>
+            <circle cx="63" cy="205" r="4"/>
+        </g>
+    </svg>
+
+    <!-- BUNGA SISI KANAN -->
+    <svg class="flower-right" viewBox="0 0 120 370"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <path d="M10 0 Q65 80 25 180 Q5 260 55 360"
+              fill="none" stroke="#84977c" stroke-width="2"/>
+
+        <g fill="#78977d">
+            <ellipse cx="30" cy="65" rx="8" ry="22" transform="rotate(-45 30 65)"/>
+            <ellipse cx="65" cy="110" rx="8" ry="22" transform="rotate(45 65 110)"/>
+            <ellipse cx="25" cy="175" rx="8" ry="22" transform="rotate(-45 25 175)"/>
+            <ellipse cx="45" cy="240" rx="8" ry="22" transform="rotate(45 45 240)"/>
+            <ellipse cx="50" cy="315" rx="8" ry="22" transform="rotate(-45 50 315)"/>
+        </g>
+
+        <g fill="#e9c6c2">
+            <circle cx="20" cy="95" r="10"/>
+            <circle cx="36" cy="95" r="10"/>
+            <circle cx="28" cy="80" r="10"/>
+            <circle cx="28" cy="108" r="10"/>
+            <circle cx="28" cy="95" r="5"/>
+
+            <circle cx="55" cy="205" r="9"/>
+            <circle cx="70" cy="205" r="9"/>
+            <circle cx="63" cy="191" r="9"/>
+            <circle cx="63" cy="219" r="9"/>
+            <circle cx="63" cy="205" r="4"/>
+        </g>
+    </svg>
 
 
+    <!-- KONTEN UNDANGAN -->
+    <div class="content">
 
-        
-<!-- Footer Start -->
-<div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5 justify-content-center">
+        <p class="small-title">
+            Together
+        </p>
 
-            <!-- Navigation Links -->
-            <div class="col-lg-4 col-md-6 text-start">
-                <div class="footer-item d-flex flex-column">
-                    <h4 class="mb-4 text-white">Quick Links</h4>
+        <p class="subtitle">
+            WITH THEIR FAMILIES
+        </p>
 
-                    <a href="#home" class="btn-link">
-                        <i class="fas fa-angle-right me-2"></i> Home
-                    </a>
-                    <a href="#weddingStory" class="btn-link">
-                        <i class="fas fa-angle-right me-2"></i> Our Story
-                    </a>
-                    <a href="#weddingGallery" class="btn-link">
-                        <i class="fas fa-angle-right me-2"></i> Wedding Gallery
-                    </a>
-                    <a href="#weddingDate" class="btn-link">
-                        <i class="fas fa-angle-right me-2"></i> Wedding Date
-                    </a>
-                    <a href="#weddingGift" class="btn-link">
-                        <i class="fas fa-angle-right me-2"></i> Wedding Gift
-                    </a>
-                </div>
+        <h1 class="couple-name">
+            YULVA
+        </h1>
+
+        <p class="couple-lastname">
+            & FAMILY
+        </p>
+
+        <div class="ampersand">&</div>
+
+        <h1 class="couple-name">
+            MUSLIADI
+        </h1>
+
+        <p class="couple-lastname">
+            & FAMILY
+        </p>
+
+        <p class="invite-text">
+            Invite you to their wedding
+        </p>
+
+        <div class="guest-section">
+
+            <p class="guest-label">
+                DEAR
+            </p>
+
+            <div class="guest-name" id="guestName">
+                Tamu Undangan
             </div>
 
-            <!-- Bride & Groom -->
-            <div class="col-lg-4 col-md-12 text-center">
-                <div class="footer-item">
+            <div class="guest-line"></div>
 
-                    <h4 class="mb-3 text-white">
-                        The Wedding Of
-                    </h4>
-
-                    <h2 class="mb-3 text-primary">
-                        Yulva
-                        <strong>&</strong>
-                        Musliadi
-                    </h2>
-
-                    <p class="text-white">
-                        بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
-                    </p>
-
-                    <p class="text-white">
-                        "Dan di antara tanda-tanda kekuasaan-Nya
-                        ialah Dia menciptakan untukmu pasangan hidup
-                        dari jenismu sendiri, supaya kamu merasa
-                        tenteram kepadanya."
-                    </p>
-
-                    <p class="text-primary mb-4">
-                        QS. Ar-Rum: 21
-                    </p>
-
-                    <div class="btn-link d-flex justify-content-center">
-                        <a href="#weddingGallery"
-                           class="btn btn-md-square btn-light btn-light-outline-0 me-2">
-                            <i class="fas fa-images"></i>
-                        </a>
-
-                        <a href="#weddingGift"
-                           class="btn btn-md-square btn-light btn-light-outline-0 me-2">
-                            <i class="fas fa-gift"></i>
-                        </a>
-
-                        <a href="#weddingRsvp"
-                           class="btn btn-md-square btn-light btn-light-outline-0">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Wedding Information -->
-            <div class="col-lg-4 col-md-6 text-end">
-                <div class="footer-item d-flex flex-column">
-
-                    <h4 class="mb-4 text-white">
-                        Wedding Information
-                    </h4>
-
-                    <p class="text-white">
-                        Dengan memohon rahmat dan ridha Allah SWT,
-                        kami mengundang keluarga dan sahabat
-                        untuk menjadi bagian dari hari bahagia kami.
-                    </p>
-                </div>
-            </div>
+            <p class="guest-description">
+                It would be our pleasure<br>
+                to have you celebrate with us
+            </p>
 
         </div>
 
-        <!-- Copyright -->
-        <div class="border-top border-secondary mt-5 pt-4">
-            <div class="text-center">
-                <p class="text-white mb-0">
-                    &copy; <span id="currentYear"></span>
-                    Wedding Invitation. Designed By Alen Ruben.
-                    All Rights Reserved.
-                </p>
-            </div>
-        </div>
+        <a href="main.html" class="open-button">
+            ✉ &nbsp; BUKA UNDANGAN
+        </a>
+
+        <p class="footer">
+            With Love
+        </p>
 
     </div>
+
 </div>
-<!-- Footer End -->
 
-
-<!-- Dynamic Year -->
 <script>
-    document.getElementById("currentYear").textContent =
-        new Date().getFullYear();
+    // Mengambil nama tamu dari link
+    const params = new URLSearchParams(window.location.search);
+
+    const guest = params.get("to");
+
+    // Menampilkan nama tamu
+    document.getElementById("guestName").textContent =
+        guest ? guest.replace(/\+/g, " ") : "Tamu Undangan";
+
+    // Tombol langsung menuju index.html
 </script>
 
-        
-
-
-
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Wedding Invitation</a>, Designed By Alen Ruben, All right reserved.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
-
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
-        
-    <!-- Menampilkan nama tamu berdasarkan parameter URL ?to= -->
-    <script>
-        (function () {
-            const params = new URLSearchParams(window.location.search);
-            const guestName = params.get("to");
-            const guestNameElement = document.getElementById("guestName");
-
-            if (guestNameElement && guestName && guestName.trim() !== "") {
-                guestNameElement.textContent = guestName.trim();
-            }
-        })();
-    </script>
-
-    <!-- Background Wedding Music -->
-    <!-- Simpan file MP3 di folder music dengan nama wedding-song.mp3 -->
-    <audio id="weddingMusic" autoplay loop preload="auto" playsinline>
-        <source src="music/Lagu-Pernikahan-Kita.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung pemutar audio.
-    </audio>
-
-    <script>
-        (function () {
-            const weddingMusic = document.getElementById("weddingMusic");
-            if (!weddingMusic) return;
-
-            // Atur volume musik (0.0 sampai 1.0).
-            weddingMusic.volume = 0.7;
-
-            // Coba putar otomatis saat halaman dibuka.
-            function tryPlayWeddingMusic() {
-                const playPromise = weddingMusic.play();
-
-                if (playPromise !== undefined) {
-                    playPromise.then(function () {
-                        // Musik berhasil diputar; listener interaksi tidak diperlukan lagi.
-                        removeMusicStartListeners();
-                    }).catch(function () {
-                        // Autoplay mungkin diblokir browser. Tunggu interaksi pengunjung.
-                    });
-                }
-            }
-
-            function removeMusicStartListeners() {
-                document.removeEventListener("click", handleFirstInteraction);
-                document.removeEventListener("touchstart", handleFirstInteraction);
-                document.removeEventListener("keydown", handleFirstInteraction);
-                document.removeEventListener("pointerdown", handleFirstInteraction);
-            }
-
-            function handleFirstInteraction() {
-                if (weddingMusic.paused) {
-                    tryPlayWeddingMusic();
-                } else {
-                    removeMusicStartListeners();
-                }
-            }
-
-            // Percobaan autoplay saat dokumen siap.
-            tryPlayWeddingMusic();
-
-            // Fallback jika autoplay ditolak browser.
-            document.addEventListener("click", handleFirstInteraction);
-            document.addEventListener("touchstart", handleFirstInteraction, { passive: true });
-            document.addEventListener("keydown", handleFirstInteraction);
-            document.addEventListener("pointerdown", handleFirstInteraction);
-
-            // Atribut loop sudah mengulang musik otomatis ketika selesai.
-        })();
-    </script>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    </body>
-
+</body>
 </html>
