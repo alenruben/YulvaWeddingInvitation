@@ -166,23 +166,49 @@ body {
     line-height: 1.5;
 }
 
-/* TOMBOL */
+/* TOMBOL BUKA UNDANGAN */
 .open-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     margin-top: 30px;
-    padding: 13px 27px;
-    border: 1px solid #a99a83;
-    color: #66705f;
+    padding: 15px 32px;
+
+    background: #87917e;
+    border: 1px solid #87917e;
+    border-radius: 3px;
+
+    color: #ffffff;
     text-decoration: none;
-    font-size: 9px;
-    letter-spacing: 3px;
-    transition: 0.4s;
-    background: rgba(255,255,255,0.85);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(80, 95, 75, 0.18);
 }
 
+/* EFEK HOVER */
 .open-button:hover {
-    background: #87917e;
-    color: white;
+    background: #6f7c68;
+    border-color: #6f7c68;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(80, 95, 75, 0.25);
+}
+
+/* IKON AMPLOP */
+.open-button svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    display: block;
+    stroke: currentColor;
+    stroke-width: 1.8;
 }
 
 /* FOOTER */
@@ -228,6 +254,17 @@ body {
     .guest-name {
         font-size: 27px;
     }
+
+    .open-button {
+        padding: 14px 27px;
+        font-size: 10px;
+        gap: 9px;
+    }
+
+    .open-button svg {
+        width: 14px;
+        height: 14px;
+    }
 }
 </style>
 </head>
@@ -259,7 +296,7 @@ body {
             </g>
         </defs>
 
-        <!-- Cabang -->
+        <!-- CABANG -->
         <g fill="none" stroke="#738b71" stroke-width="2">
             <path d="M-10 0 Q60 65 100 160 Q130 195 165 210"/>
             <path d="M100 0 Q150 70 190 135 Q220 170 250 190"/>
@@ -268,7 +305,7 @@ body {
             <path d="M190 0 Q205 65 225 115"/>
         </g>
 
-        <!-- Daun -->
+        <!-- DAUN -->
         <g>
             <use href="#leaf" x="42" y="60" transform="rotate(-50 42 60)"/>
             <use href="#leaf" x="65" y="90" transform="rotate(55 65 90)"/>
@@ -282,7 +319,7 @@ body {
             <use href="#leaf" x="405" y="125" transform="rotate(45 405 125)"/>
         </g>
 
-        <!-- Bunga -->
+        <!-- BUNGA -->
         <g>
             <use href="#pinkflower" x="25" y="40"/>
             <use href="#pinkflower" x="75" y="110"/>
@@ -296,7 +333,7 @@ body {
             <use href="#pinkflower" x="395" y="165"/>
         </g>
 
-        <!-- Bunga kecil -->
+        <!-- BUNGA KECIL -->
         <g fill="#efd8d1">
             <circle cx="45" cy="135" r="4"/>
             <circle cx="90" cy="35" r="4"/>
@@ -306,7 +343,9 @@ body {
             <circle cx="345" cy="35" r="4"/>
             <circle cx="440" cy="125" r="4"/>
         </g>
+
     </svg>
+
 
     <!-- BUNGA SISI KIRI -->
     <svg class="flower-left" viewBox="0 0 120 370"
@@ -337,6 +376,7 @@ body {
             <circle cx="63" cy="205" r="4"/>
         </g>
     </svg>
+
 
     <!-- BUNGA SISI KANAN -->
     <svg class="flower-right" viewBox="0 0 120 370"
@@ -402,6 +442,7 @@ body {
             Invite you to their wedding
         </p>
 
+        <!-- NAMA TAMU -->
         <div class="guest-section">
 
             <p class="guest-label">
@@ -421,8 +462,20 @@ body {
 
         </div>
 
+        <!-- TOMBOL BUKA UNDANGAN -->
         <a href="main.html" class="open-button">
-            ✉ &nbsp; BUKA UNDANGAN
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="M3 7L12 13L21 7"/>
+
+            </svg>
+
+            <span>BUKA UNDANGAN</span>
+
         </a>
 
         <p class="footer">
@@ -433,17 +486,17 @@ body {
 
 </div>
 
+
 <script>
     // Mengambil nama tamu dari link
     const params = new URLSearchParams(window.location.search);
 
     const guest = params.get("to");
 
-    // Menampilkan nama tamu
+    // Menampilkan nama tamu secara otomatis
     document.getElementById("guestName").textContent =
         guest ? guest.replace(/\+/g, " ") : "Tamu Undangan";
 
-    // Tombol langsung menuju index.html
 </script>
 
 </body>
