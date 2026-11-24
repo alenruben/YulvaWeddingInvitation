@@ -500,17 +500,24 @@ body {
 </div>
 
 
+
 <script>
-    // Mengambil nama tamu dari link
+    // Mengambil parameter nama tamu dari link
     const params = new URLSearchParams(window.location.search);
 
+    // Membaca nama tamu
     const guest = params.get("to");
 
     // Menampilkan nama tamu secara otomatis
-    document.getElementById("guestName").textContent =
-        guest ? guest.replace(/\+/g, " ") : "Tamu Undangan";
+    const guestName = document.getElementById("guestName");
 
+    if (guestName) {
+        guestName.textContent = guest
+            ? guest.replace(/\+/g, " ").trim()
+            : "Tamu Undangan";
+    }
 </script>
+
 
 </body>
 </html>
