@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +30,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* HALAMAN UNDANGAN */
 .invitation {
     width: 100%;
     max-width: 460px;
@@ -38,17 +38,16 @@ body {
     position: relative;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.10);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
 }
 
-/* AREA KONTEN */
 .content {
     position: relative;
     z-index: 3;
-    padding: 180px 25px 65px;
+    padding: 180px 25px 55px;
 }
 
-/* ORNAMEN BUNGA */
+/* ORNAMEN */
 .flower-top {
     position: absolute;
     width: 100%;
@@ -59,152 +58,154 @@ body {
     pointer-events: none;
 }
 
-.flower-left {
-    position: absolute;
-    width: 115px;
-    height: 370px;
-    left: 0;
-    top: 100px;
-    z-index: 2;
-    pointer-events: none;
-}
-
+.flower-left,
 .flower-right {
     position: absolute;
     width: 115px;
     height: 370px;
-    right: 0;
     top: 100px;
-    transform: scaleX(-1);
     z-index: 2;
     pointer-events: none;
 }
 
-/* TEKS */
+.flower-left {
+    left: 0;
+}
+
+.flower-right {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+/* JUDUL */
 .small-title {
     font-family: 'Great Vibes', cursive;
-    font-size: 25px;
-    color: #7e8172;
-    margin-bottom: 5px;
+    font-size: 30px;
+    color: #59664f;
+    margin-bottom: 8px;
+    font-weight: 400;
 }
 
 .subtitle {
-    font-size: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
     letter-spacing: 3px;
-    color: #858477;
-    margin-bottom: 25px;
+    color: #59644f;
+    margin-bottom: 27px;
 }
 
+/* NAMA PENGANTIN */
 .couple-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 43px;
-    line-height: 1;
-    letter-spacing: 7px;
-    font-weight: 600;
-    color: #343b36;
+    font-size: 48px;
+    line-height: 1.05;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #354437;
     text-transform: uppercase;
 }
 
 .couple-lastname {
-    font-size: 13px;
-    letter-spacing: 5px;
-    color: #656b62;
-    margin-top: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: #606b59;
+    margin-top: 9px;
 }
 
 .ampersand {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
+    font-size: 35px;
     font-style: italic;
-    color: #a78d7a;
+    font-weight: 600;
+    color: #a17d68;
     margin: 13px 0;
 }
 
+/* KALIMAT UNDANGAN */
 .invite-text {
     font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
     font-style: italic;
-    font-size: 17px;
-    letter-spacing: 1px;
-    color: #74776d;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    font-size: 20px;
+    color: #555e50;
+    margin-top: 28px;
+    margin-bottom: 30px;
 }
 
 /* NAMA TAMU */
 .guest-section {
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .guest-label {
-    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
     letter-spacing: 3px;
-    color: #888779;
+    color: #65705d;
     margin-bottom: 12px;
 }
 
 .guest-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: #414c42;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #354437;
     overflow-wrap: anywhere;
     padding: 0 10px;
 }
 
 .guest-line {
-    width: 75px;
-    height: 1px;
-    background: #c4ad9b;
-    margin: 15px auto;
+    width: 80px;
+    height: 2px;
+    background: #b89b7c;
+    margin: 17px auto;
 }
 
 .guest-description {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 17px;
+    font-size: 19px;
+    font-weight: 500;
     font-style: italic;
-    color: #858477;
+    color: #626957;
     line-height: 1.5;
 }
 
-/* TOMBOL BUKA UNDANGAN */
+/* TOMBOL */
 .open-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
-    margin-top: 30px;
-    padding: 15px 32px;
-
-    background: #87917e;
-    border: 1px solid #87917e;
-    border-radius: 3px;
-
+    margin-top: 32px;
+    padding: 16px 32px;
+    background: #68795f;
+    border: 1px solid #68795f;
+    border-radius: 4px;
     color: #ffffff;
     text-decoration: none;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 2px;
-
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(80, 95, 75, 0.18);
+    box-shadow: 0 5px 15px rgba(80,95,75,0.2);
 }
 
-/* EFEK HOVER */
 .open-button:hover {
-    background: #6f7c68;
-    border-color: #6f7c68;
+    background: #4d6048;
+    border-color: #4d6048;
     color: #ffffff;
     transform: translateY(-3px);
-    box-shadow: 0 7px 18px rgba(80, 95, 75, 0.25);
 }
 
-/* IKON AMPLOP */
 .open-button svg {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     flex-shrink: 0;
     display: block;
     stroke: currentColor;
@@ -214,8 +215,9 @@ body {
 /* FOOTER */
 .footer {
     font-family: 'Great Vibes', cursive;
-    font-size: 23px;
-    color: #a18c79;
+    font-size: 27px;
+    font-weight: 400;
+    color: #68795f;
     margin-top: 28px;
 }
 
@@ -231,9 +233,7 @@ body {
     }
 
     .content {
-        padding-top: 180px;
-        padding-left: 18px;
-        padding-right: 18px;
+        padding: 175px 18px 45px;
     }
 
     .flower-top {
@@ -246,26 +246,48 @@ body {
         height: 330px;
     }
 
-    .couple-name {
-        font-size: 37px;
-        letter-spacing: 5px;
-    }
-
-    .guest-name {
+    .small-title {
         font-size: 27px;
     }
 
+    .subtitle {
+        font-size: 9px;
+        letter-spacing: 2.5px;
+    }
+
+    .couple-name {
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+
+    .couple-lastname {
+        font-size: 10px;
+    }
+
+    .invite-text {
+        font-size: 18px;
+    }
+
+    .guest-name {
+        font-size: 30px;
+    }
+
+    .guest-description {
+        font-size: 17px;
+    }
+
     .open-button {
-        padding: 14px 27px;
+        padding: 15px 26px;
         font-size: 10px;
         gap: 9px;
     }
 
     .open-button svg {
-        width: 14px;
-        height: 14px;
+        width: 15px;
+        height: 15px;
     }
 }
+
 </style>
 </head>
 
@@ -424,22 +446,13 @@ body {
             YULVA
         </h1>
 
-        <p class="couple-lastname">
-            & FAMILY
-        </p>
-
         <div class="ampersand">&</div>
 
         <h1 class="couple-name">
             MUSLIADI
         </h1>
-
-        <p class="couple-lastname">
-            & FAMILY
-        </p>
-
         <p class="invite-text">
-            Invite you to their wedding
+            Invite you to Our wedding
         </p>
 
         <!-- NAMA TAMU -->
