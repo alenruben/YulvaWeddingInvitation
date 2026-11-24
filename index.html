@@ -14,6 +14,10 @@
 
 <style>
 
+/* =====================================
+   PENGATURAN DASAR
+===================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -47,7 +51,10 @@ body {
     padding: 180px 25px 55px;
 }
 
-/* ORNAMEN */
+/* =====================================
+   ORNAMEN BUNGA
+===================================== */
+
 .flower-top {
     position: absolute;
     width: 100%;
@@ -77,7 +84,10 @@ body {
     transform: scaleX(-1);
 }
 
-/* JUDUL */
+/* =====================================
+   JUDUL
+===================================== */
+
 .small-title {
     font-family: 'Great Vibes', cursive;
     font-size: 30px;
@@ -95,36 +105,38 @@ body {
     margin-bottom: 27px;
 }
 
-/* NAMA PENGANTIN */
+/* =====================================
+   NAMA LENGKAP PENGANTIN
+===================================== */
+
 .couple-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 48px;
-    line-height: 1.05;
-    letter-spacing: 5px;
-    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    font-weight: 600;
     color: #354437;
-    text-transform: uppercase;
+    text-transform: none;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
-.couple-lastname {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    color: #606b59;
-    margin-top: 9px;
-}
+/* TANDA & */
 
 .ampersand {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 35px;
+    font-size: 27px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
     color: #a17d68;
-    margin: 13px 0;
+    margin: 8px 0;
 }
 
-/* KALIMAT UNDANGAN */
+/* =====================================
+   KALIMAT UNDANGAN
+===================================== */
+
 .invite-text {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
@@ -135,7 +147,10 @@ body {
     margin-bottom: 30px;
 }
 
-/* NAMA TAMU */
+/* =====================================
+   NAMA TAMU
+===================================== */
+
 .guest-section {
     margin-top: 12px;
 }
@@ -175,7 +190,10 @@ body {
     line-height: 1.5;
 }
 
-/* TOMBOL */
+/* =====================================
+   TOMBOL BUKA UNDANGAN
+===================================== */
+
 .open-button {
     display: inline-flex;
     align-items: center;
@@ -212,7 +230,10 @@ body {
     stroke-width: 1.8;
 }
 
-/* FOOTER */
+/* =====================================
+   FOOTER
+===================================== */
+
 .footer {
     font-family: 'Great Vibes', cursive;
     font-size: 27px;
@@ -221,7 +242,10 @@ body {
     margin-top: 28px;
 }
 
-/* RESPONSIVE HP */
+/* =====================================
+   RESPONSIVE HP
+===================================== */
+
 @media (max-width: 480px) {
 
     body {
@@ -255,13 +279,17 @@ body {
         letter-spacing: 2.5px;
     }
 
+    /* NAMA PENGANTIN DI HP */
+
     .couple-name {
-        font-size: 40px;
-        letter-spacing: 4px;
+        font-size: 27px;
+        line-height: 1.3;
+        letter-spacing: 0.5px;
     }
 
-    .couple-lastname {
-        font-size: 10px;
+    .ampersand {
+        font-size: 25px;
+        margin: 7px 0;
     }
 
     .invite-text {
@@ -295,12 +323,16 @@ body {
 
 <div class="invitation">
 
-    <!-- BUNGA BAGIAN ATAS -->
+    <!-- =================================
+         BUNGA BAGIAN ATAS
+    ================================== -->
+
     <svg class="flower-top" viewBox="0 0 460 250"
          preserveAspectRatio="xMidYMin slice"
          xmlns="http://www.w3.org/2000/svg">
 
         <defs>
+
             <g id="leaf">
                 <ellipse cx="0" cy="0" rx="7" ry="19"
                          fill="#78947b"
@@ -316,9 +348,11 @@ body {
                 <ellipse cx="-9" cy="0" rx="5" ry="11" fill="#f5ddd7" transform="rotate(90 -9 0)"/>
                 <circle cx="0" cy="0" r="4" fill="#c5a17c"/>
             </g>
+
         </defs>
 
         <!-- CABANG -->
+
         <g fill="none" stroke="#738b71" stroke-width="2">
             <path d="M-10 0 Q60 65 100 160 Q130 195 165 210"/>
             <path d="M100 0 Q150 70 190 135 Q220 170 250 190"/>
@@ -328,6 +362,7 @@ body {
         </g>
 
         <!-- DAUN -->
+
         <g>
             <use href="#leaf" x="42" y="60" transform="rotate(-50 42 60)"/>
             <use href="#leaf" x="65" y="90" transform="rotate(55 65 90)"/>
@@ -342,6 +377,7 @@ body {
         </g>
 
         <!-- BUNGA -->
+
         <g>
             <use href="#pinkflower" x="25" y="40"/>
             <use href="#pinkflower" x="75" y="110"/>
@@ -356,6 +392,7 @@ body {
         </g>
 
         <!-- BUNGA KECIL -->
+
         <g fill="#efd8d1">
             <circle cx="45" cy="135" r="4"/>
             <circle cx="90" cy="35" r="4"/>
@@ -369,7 +406,10 @@ body {
     </svg>
 
 
-    <!-- BUNGA SISI KIRI -->
+    <!-- =================================
+         BUNGA SISI KIRI
+    ================================== -->
+
     <svg class="flower-left" viewBox="0 0 120 370"
          xmlns="http://www.w3.org/2000/svg">
 
@@ -385,6 +425,7 @@ body {
         </g>
 
         <g fill="#e9c6c2">
+
             <circle cx="20" cy="95" r="10"/>
             <circle cx="36" cy="95" r="10"/>
             <circle cx="28" cy="80" r="10"/>
@@ -396,11 +437,16 @@ body {
             <circle cx="63" cy="191" r="9"/>
             <circle cx="63" cy="219" r="9"/>
             <circle cx="63" cy="205" r="4"/>
+
         </g>
+
     </svg>
 
 
-    <!-- BUNGA SISI KANAN -->
+    <!-- =================================
+         BUNGA SISI KANAN
+    ================================== -->
+
     <svg class="flower-right" viewBox="0 0 120 370"
          xmlns="http://www.w3.org/2000/svg">
 
@@ -416,6 +462,7 @@ body {
         </g>
 
         <g fill="#e9c6c2">
+
             <circle cx="20" cy="95" r="10"/>
             <circle cx="36" cy="95" r="10"/>
             <circle cx="28" cy="80" r="10"/>
@@ -427,79 +474,106 @@ body {
             <circle cx="63" cy="191" r="9"/>
             <circle cx="63" cy="219" r="9"/>
             <circle cx="63" cy="205" r="4"/>
+
         </g>
+
     </svg>
 
 
-    
-<!-- KONTEN UNDANGAN -->
-<div class="content">
+    <!-- =================================
+         KONTEN UNDANGAN
+    ================================== -->
 
-    <p class="small-title">
-        Together
-    </p>
+    <div class="content">
 
-    <h1 class="couple-name">
-        Yulva Sulistia, S.E
-    </h1>
+        <!-- JUDUL -->
 
-    <div class="ampersand">&</div>
-
-    <h1 class="couple-name">
-        Musliadi, S.T
-    </h1>
-
-    <p class="invite-text">
-        Invite you to Our wedding
-    </p>
-
-    <!-- NAMA TAMU -->
-    <div class="guest-section">
-
-        <p class="guest-label">
-            DEAR
+        <p class="small-title">
+            Together
         </p>
 
-        <div class="guest-name" id="guestName">
-            Tamu Undangan
+
+        <!-- NAMA PENGANTIN -->
+
+        <h1 class="couple-name">
+            Yulva Sulistia, S.E.
+        </h1>
+
+        <div class="ampersand">&</div>
+
+        <h1 class="couple-name">
+            Musliadi, S.T.
+        </h1>
+
+
+        <!-- KALIMAT UNDANGAN -->
+
+        <p class="invite-text">
+            Invite you to Our wedding
+        </p>
+
+
+        <!-- =================================
+             NAMA TAMU UNDANGAN
+        ================================== -->
+
+        <div class="guest-section">
+
+            <p class="guest-label">
+                DEAR
+            </p>
+
+            <div class="guest-name" id="guestName">
+                Tamu Undangan
+            </div>
+
+            <div class="guest-line"></div>
+
+            <p class="guest-description">
+                It would be our pleasure<br>
+                to have you celebrate with us
+            </p>
+
         </div>
 
-        <div class="guest-line"></div>
 
-        <p class="guest-description">
-            It would be our pleasure<br>
-            to have you celebrate with us
+        <!-- =================================
+             TOMBOL BUKA UNDANGAN
+        ================================== -->
+
+        <a href="main.html" class="open-button">
+
+            <svg viewBox="0 0 24 24"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <rect x="3" y="5" width="18" height="14" rx="2"/>
+                <path d="M3 7L12 13L21 7"/>
+
+            </svg>
+
+            <span>BUKA UNDANGAN</span>
+
+        </a>
+
+
+        <!-- FOOTER -->
+
+        <p class="footer">
+            With Love
         </p>
 
     </div>
 
-    <!-- TOMBOL BUKA UNDANGAN -->
-    <a href="main.html" class="open-button">
-
-        <svg viewBox="0 0 24 24"
-             fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-
-            <rect x="3" y="5" width="18" height="14" rx="2"/>
-            <path d="M3 7L12 13L21 7"/>
-
-        </svg>
-
-        <span>BUKA UNDANGAN</span>
-
-    </a>
-
-    <p class="footer">
-        With Love
-    </p>
-
-</div>
 </div>
 
 
-
+<!-- =====================================
+     SCRIPT NAMA TAMU OTOMATIS
+===================================== -->
 
 <script>
+
     // Mengambil parameter nama tamu dari link
     const params = new URLSearchParams(window.location.search);
 
@@ -514,8 +588,8 @@ body {
             ? guest.replace(/\+/g, " ").trim()
             : "Tamu Undangan";
     }
-</script>
 
+</script>
 
 </body>
 </html>
