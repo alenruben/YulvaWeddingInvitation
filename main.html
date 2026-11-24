@@ -425,132 +425,208 @@
         <!-- Carousel End -->
 
 
-        <!-- Hello! Start -->
-        <style>
-    /* Ukuran foto pengantin */
+        
+<!-- Hello! Start -->
+
+<style>
+    /* Area utama */
+    #weddingAbout .row-couple {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    /* Kartu Bride dan Groom */
+    #weddingAbout .person-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Ukuran foto */
     #weddingAbout .img-border {
         width: 220px;
         height: 280px;
         object-fit: cover;
-        flex-shrink: 0;
+        object-position: center;
+        display: block;
+        margin: 0 auto 20px;
     }
 
-    /* Posisi foto dan teks */
-    #weddingAbout .bride-content,
-    #weddingAbout .groom-content {
+    /* Nama pengantin */
+    #weddingAbout .person-card h3 {
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    /* Keterangan keluarga */
+    #weddingAbout .person-card p {
+        text-align: center;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    /* Posisi ikon hati */
+    #weddingAbout .heart-center {
         display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 15px;
+        padding-top: 110px;
     }
 
-    #weddingAbout .bride-content {
-        justify-content: flex-end;
-    }
-
-    #weddingAbout .groom-content {
-        justify-content: flex-start;
-    }
-
-    /* Tampilan tablet dan HP */
+    /* Tablet */
     @media (max-width: 991px) {
-        #weddingAbout .bride-content,
-        #weddingAbout .groom-content {
-            justify-content: center;
-        }
 
         #weddingAbout .img-border {
             width: 180px;
             height: 230px;
         }
+
+        #weddingAbout .heart-center {
+            padding-top: 90px;
+        }
     }
 
+    /* HP */
     @media (max-width: 576px) {
-        #weddingAbout .bride-content,
-        #weddingAbout .groom-content {
-            gap: 10px;
-        }
 
         #weddingAbout .img-border {
-            width: 130px;
-            height: 170px;
+            width: 100%;
+            max-width: 145px;
+            height: 180px;
+            margin-bottom: 15px;
         }
 
-        #weddingAbout h3 {
-            font-size: 20px;
+        #weddingAbout .person-card h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
         }
 
-        #weddingAbout p {
-            font-size: 12px;
-            line-height: 22px !important;
+        #weddingAbout .person-card p {
+            font-size: 10px;
+            line-height: 19px;
         }
 
-        #weddingAbout .fa-heart {
-            font-size: 35px;
+        #weddingAbout .heart-center {
+            padding-top: 65px;
+        }
+
+        #weddingAbout .heart-center .fa-heart {
+            font-size: 28px;
+        }
+
+        #weddingAbout .invitation-heading {
+            font-size: 16px;
+        }
+
+        #weddingAbout .display-1 {
+            font-size: 55px;
         }
     }
+
 </style>
+
 
 <div class="container-fluid position-relative py-5" id="weddingAbout">
 
+    <!-- Ornamen kanan -->
     <div class="position-absolute" style="top: -35px; right: 0;">
         <img src="tamp-bg-1.png" class="img-fluid" alt="">
     </div>
 
+    <!-- Ornamen kiri -->
     <div class="position-absolute" style="top: -10px; left: 0; transform: rotate(150deg);">
         <img src="tamp-bg-1.png" class="img-fluid" alt="">
     </div>
 
+
     <div class="container position-relative py-5">
 
+        <!-- Judul -->
         <div class="mx-auto text-center mb-5 wow fadeInUp"
              data-wow-delay="0.1s" style="max-width: 800px;">
+
             <h1 class="text-primary display-1">Hello!</h1>
-            <h4 class="text-dark mb-0 invitation-heading">We invite you to celebrate our wedding</h4>
-        </div>
 
-        <div class="row g-4 align-items-center">
-
-            <!-- Bride -->
-<div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-    <div class="bride-content">
-        <div class="text-end my-auto">
-            <h3 class="text-primary mb-3 bride-name">Yulva Sulistia</h3>
-            <p class="text-dark mb-0 bride-description">
-                Anak kedua dari pasangan<br>
-                Bapak Legiman & Ibu Mariani br. Purba
-            </p>
-        </div>
-
-        <img src="yulva.jpeg" class="img-fluid img-border" alt="Yulva">
-    </div>
-</div>
-
-<!-- Heart -->
-<div class="col-lg-2 wow fadeIn" data-wow-delay="0.5s">
-    <div class="d-flex align-items-center justify-content-center">
-        <i class="fa fa-heart fa-5x text-primary"></i>
-    </div>
-</div>
-
-<!-- Groom -->
-<div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
-    <div class="groom-content">
-        <img src="adi.jpeg" class="img-fluid img-border" alt="Musliadi">
-
-        <div class="my-auto">
-            <h3 class="text-primary mb-3 groom-name">Musliadi</h3>
-            <p class="text-dark mb-0 groom-description">
-                Anak kedua dari pasangan<br>
-                Bapak Lamuse Laupe & Ibu Suriani
-            </p>
-        </div>
-    </div>
-</div>
+            <h4 class="text-dark mb-0 invitation-heading">
+                We invite you to celebrate our wedding
+            </h4>
 
         </div>
+
+
+        <!-- Bride dan Groom -->
+        <div class="row g-2 row-couple align-items-start">
+
+            <!-- BRIDE -->
+            <div class="col-5 col-lg-5 wow fadeInUp"
+                 data-wow-delay="0.3s">
+
+                <div class="person-card">
+
+                    <img src="yulva.jpeg"
+                         class="img-fluid img-border"
+                         alt="Yulva">
+
+                    <h3 class="text-primary bride-name">
+                        Yulva Sulistia
+                    </h3>
+
+                    <p class="text-dark bride-description">
+                        Anak kedua dari pasangan<br>
+                        Bapak Legiman & Ibu Mariani br. Purba
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- HEART -->
+            <div class="col-2 col-lg-2">
+
+                <div class="heart-center">
+
+                    <i class="fa fa-heart fa-3x text-primary"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- GROOM -->
+            <div class="col-5 col-lg-5 wow fadeInUp"
+                 data-wow-delay="0.3s">
+
+                <div class="person-card">
+
+                    <img src="adi.jpeg"
+                         class="img-fluid img-border"
+                         alt="Musliadi">
+
+                    <h3 class="text-primary groom-name">
+                        Musliadi
+                    </h3>
+
+                    <p class="text-dark groom-description">
+                        Anak kedua dari pasangan<br>
+                        Bapak Lamuse Laupe & Ibu Suriani
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+
 </div>
-        <!-- Hello! End -->
+
+<!-- Hello! End -->
+
 
 
         
@@ -1330,161 +1406,6 @@
     </div>
 </div>
 <!-- Gallery End -->
-
-
-
-
-        
-
-<!-- Bridesmaids -->
-<div class="container-fluid gallery position-relative py-5" id="weddingGallery">
-
-    <!-- Ornamen Background -->
-    <div class="position-absolute" style="top: -95px; right: 0;">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-    <div class="position-absolute" style="top: -80px; left: 0; transform: rotate(150deg);">
-        <img src="tamp-bg-1.png" class="img-fluid" alt="">
-    </div>
-
-    <div class="container position-relative py-5">
-
-        <!-- Judul Utama -->
-        <div class="text-center mx-auto pb-5 wow fadeInUp"
-             data-wow-delay="0.1s" style="max-width: 800px;">
-            <h1 class="display-2 text-dark">Bridesmaids</h1>
-            <p class="fs-5 text-dark">
-                The special people who make our moments more beautiful.
-            </p>
-        </div>
-
-        <!-- Judul Bridesmaids -->
-        <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.2s">
-            <h2 class="text-dark">Bridesmaids</h2>
-            <p class="text-dark">Our beautiful bridesmaids</p>
-        </div>
-
-        <!-- Galeri 6 Foto -->
-        <div class="row g-4 mb-5">
-
-            <!-- Bridesmaid 1 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto1.jpg" alt="Bridesmaid 1">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto1.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 1</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 2 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto2.jpg" alt="Bridesmaid 2">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto2.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 2</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 3 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto3.jpg" alt="Bridesmaid 3">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto3.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 3</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 4 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto4.jpg" alt="Bridesmaid 4">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto4.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 4</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 5 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto5.jpg" alt="Bridesmaid 5">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto5.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 5</h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bridesmaid 6 -->
-            <div class="col-6 col-md-4 col-lg-2">
-                <div class="gallery-item wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="gallery-img">
-                        <img class="img-fluid w-100" src="foto6.jpg" alt="Bridesmaid 6">
-                        <div class="hover-style"></div>
-                        <div class="search-icon">
-                            <a href="foto6.jpg" data-lightbox="Bridesmaids">
-                                <i class="fas fa-plus btn-primary btn-primary-outline-0 p-3"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-overlay bg-light border-secondary border-top-0 p-3"
-                         style="border-style: double;">
-                        <h5>Bridesmaid 6</h5>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!-- Bridesmaids End -->
 
 <!-- Wedding Gift Start -->
 <div class="container-fluid RSVP-form py-5" id="weddingGift">
